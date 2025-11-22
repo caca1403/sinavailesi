@@ -33,11 +33,14 @@
         }
 
         /* Navbar Responsive */
+        /*
+            NOTE: avoid forcing .navbar-collapse display via !important rules here.
+            Bootstrap toggles the `.show` class on the collapse element to open/close the
+            mobile menu; using `display: none !important` prevents that. Keep the
+            toggler visible on smaller screens but let Bootstrap handle the collapse.
+        */
         @media (max-width: 1024px) {
-            .navbar-expand-lg .navbar-collapse {
-                display: none !important;
-            }
-            .navbar-expand-lg .navbar-toggler {
+            .navbar-toggler {
                 display: block !important;
             }
         }
@@ -1150,7 +1153,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="testimonials-grid">
-                           <div id="disqus_thread"></div>
+                              <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -1623,5 +1626,3 @@ Evli ve üç çocuk babası bir hekim olarak , hem ailemden aldığım güçle h
 
 </body>
 </html>
-
-
