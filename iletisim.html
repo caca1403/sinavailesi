@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sınav Ailesi - İletişim. Bize ulaşın ve sorularınızı sorun.">
+    <meta name="keywords" content="iletişim, whatsapp, telefon, email, sorular">
+    <meta name="author" content="Sınav Ailesi">
+    <title>İletişim | Sınav Ailesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #country {
+            background-size: 28px 17px;
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            padding-left: 50px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            min-width: 120px;
+            text-indent: 0.1px;
+            text-overflow: '';
+        }
+        
+        #country::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        #country::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        #country::-webkit-scrollbar-thumb {
+            background: #1abc9c;
+            border-radius: 4px;
+        }
+
+        /* Responsive Form Styles */
+        @media (max-width: 992px) {
+            .contact-form-section {
+                padding: 3rem 1rem !important;
+            }
+            
+            #contactForm {
+                padding: 2rem !important;
+                border-radius: 1.5rem !important;
+            }
+
+            .form-header {
+                margin: -2rem -2rem 2rem -2rem !important;
+            }
+
+            .form-button-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+
+            #country {
+                padding-left: 48px !important;
+                background-size: 28px 17px !important;
+                background-position: 9px center !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-form-section {
+                padding: 2rem 0.75rem !important;
+            }
+
+            #contactForm {
+                padding: 1.5rem !important;
+                border-radius: 1rem !important;
+                box-shadow: 0 10px 30px rgba(26, 188, 156, 0.1) !important;
+            }
+
+            .form-header {
+                padding: 1rem !important;
+                margin: -1.5rem -1.5rem 1.5rem -1.5rem !important;
+                border-radius: 0.8rem !important;
+                font-size: 0.85rem !important;
+            }
+
+            .form-header h4 {
+                font-size: 1rem !important;
+                margin-top: 0.3rem !important;
+            }
+
+            .form-header p {
+                font-size: 0.75rem !important;
+            }
+
+            .form-label {
+                font-size: 0.9rem !important;
+                margin-bottom: 0.6rem !important;
+            }
+
+            .form-control {
+                font-size: 1rem !important;
+                padding: 0.8rem !important;
+                border-radius: 0.8rem !important;
+            }
+
+            textarea.form-control {
+                min-height: 120px;
+                font-size: 0.95rem !important;
+            }
+
+            .form-button-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.8rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .btn {
+                padding: 0.95rem 1rem !important;
+                font-size: 0.9rem !important;
+                border-radius: 0.9rem !important;
+            }
+
+            .btn i {
+                font-size: 1.2rem !important;
+            }
+
+            .info-box {
+                padding: 1rem !important;
+                border-radius: 0.8rem !important;
+                font-size: 0.85rem !important;
+                border-left-width: 4px !important;
+            }
+
+            #country {
+                width: 100%;
+                min-width: auto;
+                font-size: 0.95rem;
+            }
+
+            .phone-input-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.6rem !important;
+                align-items: stretch !important;
+            }
+
+            .phone-input-grid select,
+            .phone-input-grid input {
+                width: 100% !important;
+            }
+
+            #country {
+                padding-left: 45px !important;
+                background-size: 28px 17px !important;
+                background-position: 7px center !important;
+                font-size: 0.95rem !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-form-section {
+                padding: 1.5rem 0.5rem !important;
+            }
+
+            #contactForm {
+                padding: 1.2rem !important;
+                border-radius: 0.9rem !important;
+                box-shadow: 0 8px 20px rgba(26, 188, 156, 0.08) !important;
+            }
+
+            .form-header {
+                padding: 0.8rem !important;
+                margin: -1.2rem -1.2rem 1.2rem -1.2rem !important;
+                border-radius: 0.7rem !important;
+            }
+
+            .form-header h4 {
+                font-size: 0.9rem !important;
+            }
+
+            .form-header p {
+                font-size: 0.7rem !important;
+                letter-spacing: 0px !important;
+            }
+
+            .form-label {
+                font-size: 0.85rem !important;
+                margin-bottom: 0.5rem !important;
+                font-weight: 700 !important;
+                line-height: 1.3 !important;
+            }
+
+            .form-control {
+                font-size: 0.95rem !important;
+                padding: 0.75rem 0.7rem !important;
+                border-radius: 0.7rem !important;
+                border-width: 2px !important;
+            }
+
+            .mb-4 {
+                margin-bottom: 1rem !important;
+            }
+
+            textarea.form-control {
+                min-height: 100px;
+                font-size: 0.9rem !important;
+                padding: 0.75rem 0.7rem !important;
+            }
+
+            .form-button-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.6rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .btn {
+                padding: 0.9rem 0.8rem !important;
+                font-size: 0.85rem !important;
+                border-radius: 0.8rem !important;
+                gap: 0.4rem !important;
+            }
+
+            .btn i {
+                font-size: 1rem !important;
+            }
+
+            .info-box {
+                padding: 0.8rem !important;
+                border-radius: 0.7rem !important;
+                font-size: 0.8rem !important;
+                border-left-width: 3px !important;
+            }
+
+            .info-box i {
+                font-size: 0.9rem !important;
+            }
+
+            .phone-input-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.5rem !important;
+                align-items: stretch !important;
+            }
+
+            .phone-input-grid select,
+            .phone-input-grid input {
+                width: 100% !important;
+                font-size: 0.9rem !important;
+                padding: 0.65rem !important;
+            }
+
+            #country {
+                padding-left: 40px !important;
+                background-size: 25px 16px !important;
+                background-position: 6px center !important;
+                font-size: 0.9rem !important;
+            }
+        }
+
+        /* Progress Indicator Styles */
+        .progress-indicator {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+        }
+
+        .step-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .step-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #999;
+            margin: 0;
+            transition: all 0.3s ease;
+        }
+
+        .step-line {
+            flex: 1;
+            height: 3px;
+            background: #e0e0e0;
+            margin: 0 1rem;
+            border-radius: 2px;
+            margin-top: 0.8rem;
+            transition: all 0.4s ease;
+        }
+
+        /* Mobile Progress Indicator */
+        @media (max-width: 768px) {
+            .progress-indicator {
+                margin-bottom: 2rem;
+                padding: 0 0.5rem;
+            }
+
+            .step-number {
+                width: 35px;
+                height: 35px;
+                font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .step-label {
+                font-size: 0.7rem;
+            }
+
+            .step-line {
+                margin: 0 0.5rem;
+                margin-top: 0.6rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .progress-indicator {
+                margin-bottom: 1.5rem;
+                padding: 0;
+                gap: 0;
+            }
+
+            .step-item {
+                flex: 1;
+            }
+
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.85rem;
+                margin-bottom: 0.2rem;
+            }
+
+            .step-label {
+                font-size: 0.65rem;
+                max-width: 60px;
+                text-align: center;
+                word-break: break-word;
+            }
+
+            .step-line {
+                height: 2px;
+                margin: 0 0.3rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* Toast/Modal Notification Styles */
+        .notification-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeInOverlay 0.3s ease;
+        }
+
+        .notification-modal {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .notification-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .notification-icon.success {
+            background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%);
+            color: white;
+        }
+
+        .notification-icon.error {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+        }
+
+        .notification-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .notification-message {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .notification-button {
+            background: linear-gradient(135deg, #1abc9c, #00d4d4);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .notification-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+        }
+
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* Mobile Notification Styles */
+        @media (max-width: 576px) {
+            .notification-modal {
+                padding: 2rem;
+            }
+
+            .notification-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .notification-title {
+                font-size: 1.3rem;
+            }
+
+            .notification-message {
+                font-size: 0.95rem;
+            }
+
+            .notification-button {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Input Validation Feedback Styles */
+        .input-group-wrapper {
+            position: relative;
+        }
+
+        .form-control.valid {
+            border-color: #1dd1a1 !important;
+            background-color: rgba(29, 209, 161, 0.02) !important;
+        }
+
+        .form-control.valid::after {
+            content: '✓';
+        }
+
+        .form-control.invalid {
+            border-color: #ff6b6b !important;
+            background-color: rgba(255, 107, 107, 0.02) !important;
+        }
+
+        .form-control:focus.valid {
+            box-shadow: 0 0 0 3px rgba(29, 209, 161, 0.2) !important;
+        }
+
+        .form-control:focus.invalid {
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2) !important;
+        }
+
+        .field-status-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            display: none;
+            animation: scaleIn 0.3s ease;
+        }
+
+        .field-status-icon.show {
+            display: block;
+        }
+
+        .field-status-icon.valid {
+            color: #1dd1a1;
+        }
+
+        .field-status-icon.invalid {
+            color: #ff6b6b;
+        }
+
+        .error-text {
+            color: #ff6b6b !important;
+            font-size: 0.85rem !important;
+            font-weight: 700 !important;
+            margin-top: 0.5rem !important;
+            display: none;
+        }
+
+        .error-text.show {
+            display: block !important;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-graduation-cap"></i> Sınav Ailesi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i> Uzmanlıkların Kapsamı
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="psikoloji.html"><i class="fas fa-brain"></i> Psikolojik Destek</a></li>
+                            <li><a class="dropdown-item" href="uyku-beslenme.html"><i class="fas fa-utensils"></i> Uyku & Beslenme</a></li>
+                            <li><a class="dropdown-item" href="mentorlik.html"><i class="fas fa-handshake"></i> Mentörlük Programı</a></li>
+                            <li><a class="dropdown-item" href="egitim.html"><i class="fas fa-book"></i> Bireysel Eğitim</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ailedanismanligi.html"><i class="fas fa-users"></i> Aile Danışmanlığı</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="medya.html">Medya</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sertifikalar.html">Sertifikalar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: 60vh; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(0, 160, 160, 0.15) 0%, rgba(0, 119, 182, 0.15) 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0, 160, 160, 0.2), transparent); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -80px; right: -80px; width: 350px; height: 350px; background: radial-gradient(circle, rgba(0, 119, 182, 0.2), transparent); border-radius: 50%;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="hero-content" style="text-align: center;">
+                <div style="display: inline-block; padding: 0.8rem 2rem; background: rgba(0, 160, 160, 0.15); border: 2px solid #1abc9c; border-radius: 50px; color: #1abc9c; font-weight: 700; font-size: 0.95rem; margin-bottom: 2rem; letter-spacing: 0.5px;">
+                    📞 İLETİŞİM
+                </div>
+                <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; margin-bottom: 1rem;">İletişime Geçin</h1>
+                <div class="hero-question" style="margin-top: 1.5rem;">
+                    <h2 style="color: #1abc9c; font-weight: 700; font-size: clamp(1.3rem, 4vw, 2rem);">Bize Ulaşın</h2>
+                </div>
+                <p style="font-size: 1.15rem; margin-top: 2rem; color: #555; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                    Sorularınız, görüşleriniz ve önerileriniz için bizimle iletişime geçin. Hızlı cevap için WhatsApp tercih etmeyi öneriyoruz.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Overview Section -->
+    <section style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.05) 0%, rgba(0, 119, 182, 0.05) 100%); padding: 3rem 2rem;">
+        <div class="container">
+            <h2 style="text-align: center; color: #1abc9c; font-weight: 700; margin-bottom: 3rem;">Uzmanlıkların Kapsamı</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <a href="psikoloji.html" style="text-decoration: none;">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); transition: all 0.3s ease; border-top: 4px solid #1abc9c; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 160, 160, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 160, 160, 0.1)'">
+                            <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                                <i class="fas fa-brain" style="font-size: 2rem; color: #1abc9c;"></i>
+                            </h5>
+                            <h6 style="color: var(--text-dark); text-align: center; font-weight: 700;">Psikolojik Destek</h6>
+                            <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0;">Duygusal dayanıklılık ve stres yönetimi</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <a href="uyku-beslenme.html" style="text-decoration: none;">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); transition: all 0.3s ease; border-top: 4px solid #3498db; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 119, 182, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 160, 160, 0.1)'">
+                            <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                                <i class="fas fa-utensils" style="font-size: 2rem; color: #3498db;"></i>
+                            </h5>
+                            <h6 style="color: var(--text-dark); text-align: center; font-weight: 700;">Uyku & Beslenme</h6>
+                            <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0;">Bilimsel uyku düzeni ve beslenme</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <a href="mentorlik.html" style="text-decoration: none;">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); transition: all 0.3s ease; border-top: 4px solid #1abc9c; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 160, 160, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 160, 160, 0.1)'">
+                            <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                                <i class="fas fa-handshake" style="font-size: 2rem; color: #1abc9c;"></i>
+                            </h5>
+                            <h6 style="color: var(--text-dark); text-align: center; font-weight: 700;">Mentörlük Programı</h6>
+                            <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0;">Zaman yönetimi ve verimlilik</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <a href="egitim.html" style="text-decoration: none;">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); transition: all 0.3s ease; border-top: 4px solid #3498db; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 119, 182, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 160, 160, 0.1)'">
+                            <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                                <i class="fas fa-book" style="font-size: 2rem; color: #3498db;"></i>
+                            </h5>
+                            <h6 style="color: var(--text-dark); text-align: center; font-weight: 700;">Bireysel Eğitim</h6>
+                            <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0;">Mantık odaklı öğrenme stratejileri</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <a href="ailedanismanligi.html" style="text-decoration: none;">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); transition: all 0.3s ease; border-top: 4px solid #1abc9c; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 160, 160, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 160, 160, 0.1)'">
+                            <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                                <i class="fas fa-users" style="font-size: 2rem; color: #1abc9c;"></i>
+                            </h5>
+                            <h6 style="color: var(--text-dark); text-align: center; font-weight: 700;">Aile Danışmanlığı</h6>
+                            <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0;">Ebeveyn-çocuk iletişimi ve aile dinamiği</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
+                        <i class="fas fa-info-circle"></i> İletişim Bilgileri
+                    </h3>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 160, 160, 0.12); margin-bottom: 2rem; border-left: 6px solid #1abc9c; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0, 160, 160, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(0, 160, 160, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fab fa-whatsapp" style="color: #25d366; margin-right: 0.7rem; font-size: 1.6rem;"></i> WhatsApp - Psikolojik Destek & Aile
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light);">
+                            <a href="https://wa.me/905455521485" style="color: #1abc9c; text-decoration: none; font-weight: 700; transition: 0.3s;">
+                                +90 545 552 14 85
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                            Psikolojik destek ve aile danışmanlığı konuları için canlı destek.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(52, 152, 219, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.12); margin-bottom: 2rem; border-left: 6px solid #3498db; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(52, 152, 219, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fab fa-whatsapp" style="color: #25d366; margin-right: 0.7rem; font-size: 1.6rem;"></i> WhatsApp - Diğer Hizmetler
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light);">
+                            <a href="https://wa.me/905512515671" style="color: #3498db; text-decoration: none; font-weight: 700; transition: 0.3s;">
+                                +90 551 251 56 71
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                            Uyku & beslenme, mentörlük, eğitim ve genel sorular için canlı destek.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 119, 182, 0.12); margin-bottom: 2rem; border-left: 6px solid #3498db; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0, 119, 182, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-envelope" style="color: #e53238; margin-right: 0.7rem; font-size: 1.4rem;"></i> E-posta
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light);">
+                            <a href="mailto:sinavailesi2025@gmail.com" style="color: #1abc9c; text-decoration: none; font-weight: 700; transition: 0.3s;">
+                                sinavailesi2025@gmail.com
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                            Detaylı sorularınız için e-posta gönderebilirsiniz.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 160, 160, 0.12); margin-bottom: 2rem; border-left: 6px solid #1abc9c; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0, 160, 160, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(0, 160, 160, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-phone" style="color: #1abc9c; margin-right: 0.7rem; font-size: 1.4rem;"></i> Telefon - Psikolojik Destek & Aile
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light);">
+                            <a href="tel:+905455521485" style="color: #1abc9c; text-decoration: none; font-weight: 700; transition: 0.3s;">
+                                +90 545 552 14 85
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                            Pazartesi-Cumartesi: 09:00 - 18:00
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(52, 152, 219, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.12); margin-bottom: 2rem; border-left: 6px solid #3498db; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(52, 152, 219, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-phone" style="color: #3498db; margin-right: 0.7rem; font-size: 1.4rem;"></i> Telefon - Diğer Hizmetler
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light);">
+                            <a href="tel:+905512515671" style="color: #3498db; text-decoration: none; font-weight: 700; transition: 0.3s;">
+                                +90 551 251 56 71
+                            </a>
+                        </p>
+                        <p style="margin-top: 0.7rem; color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
+                            Pazartesi-Cumartesi: 09:00 - 18:00
+                        </p>
+                    </div>
+
+                   
+
+                
+
+                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.02) 100%); padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 119, 182, 0.12); border-left: 6px solid #3498db; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0, 119, 182, 0.2)'; this.style.transform='translateX(5px) translateY(-3px)';" onmouseout="this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.12)'; this.style.transform='translateX(0) translateY(0)';">
+                        <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-map-marker-alt" style="color: #ff6b6b; margin-right: 0.7rem; font-size: 1.4rem;"></i> Adres
+                        </h5>
+                        <p style="margin: 0; color: var(--text-light); font-weight: 600;">
+                            Fatsa, Ordu<br>
+                            Türkiye
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div style="position: relative; overflow: hidden;">
+                        <!-- Gradient Background Circle -->
+                        <div style="position: absolute; top: -50px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(26, 188, 156, 0.15), transparent); border-radius: 50%; z-index: 0;"></div>
+                        
+                        <h3 style="color: #1abc9c; font-weight: 900; margin-bottom: 2rem; font-size: 1.8rem; position: relative; z-index: 1;">
+                            <i class="fas fa-envelope" style="color: #1abc9c; margin-right: 0.8rem; background: linear-gradient(135deg, #1abc9c, #3498db); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i> Bizimle İletişime Geçin
+                        </h3>
+                        
+                        <form id="contactForm" class="contact-form-section" style="background: linear-gradient(135deg, white 0%, rgba(26, 188, 156, 0.03) 100%); padding: 3rem; border-radius: 2rem; box-shadow: 0 20px 60px rgba(26, 188, 156, 0.15); border: 2px solid rgba(26, 188, 156, 0.1); transition: all 0.4s ease; position: relative; z-index: 1; backdrop-filter: blur(10px);">
+                            
+                            <!-- Progress Indicator -->
+                            <div class="progress-indicator">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <p class="step-label">Bilgiler</p>
+                                </div>
+                                <div class="step-line"></div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <p class="step-label">Konu</p>
+                                </div>
+                                <div class="step-line"></div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <p class="step-label">Gözden Geçir</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Form Header -->
+                            <div class="form-header" style="background: linear-gradient(135deg, #1abc9c, #3498db); padding: 1.5rem; border-radius: 1.2rem; margin: -3rem -3rem 2.5rem -3rem; color: white; text-align: center;">
+                                <p style="margin: 0; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">📝 Form Tamamlayın</p>
+                                <h4 style="margin: 0.5rem 0 0 0; font-size: 1.3rem; font-weight: 900;">Sorularınızı Bize Gönderin</h4>
+                            </div>
+
+                            <!-- STEP 1: PERSONAL INFO -->
+                            <div id="step1" class="form-step" style="display: block;">
+                                <div class="mb-4">
+                                    <label for="name" class="form-label" style="color: var(--text-dark); font-weight: 800; margin-bottom: 0.8rem; display: block; font-size: 0.95rem; letter-spacing: 0.4px;">
+                                        👤 Adınız Soyadınız <span style="color: #e74c3c; font-weight: 900;">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="name" placeholder="Örneğin: Ahmet Yılmaz" required style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1rem; font-size: 0.95rem; transition: all 0.3s ease; background: white; font-weight: 500;" onkeyup="validateName(this.value);" onfocus="this.style.borderColor='#1abc9c'; this.style.boxShadow='0 0 0 3px rgba(26, 188, 156, 0.1)';" onblur="this.style.borderColor=document.getElementById('name').classList.contains('valid')?'#1dd1a1':'#e0e0e0'; this.style.boxShadow='none';">
+                                    <small id="nameError" class="error-text" style="color: #e74c3c; font-size: 0.85rem; font-weight: 700;"></small>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="email" class="form-label" style="color: var(--text-dark); font-weight: 800; margin-bottom: 0.8rem; display: block; font-size: 0.95rem; letter-spacing: 0.4px;">
+                                        📧 E-posta Adresiniz <span style="color: #e74c3c; font-weight: 900;">*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" placeholder="ornek@email.com" required style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1rem; font-size: 0.95rem; transition: all 0.3s ease; background: white; font-weight: 500;" onkeyup="validateEmail(this.value);" onfocus="this.style.borderColor='#3498db'; this.style.boxShadow='0 0 0 3px rgba(52, 152, 219, 0.1)';" onblur="this.style.borderColor=document.getElementById('email').classList.contains('valid')?'#1dd1a1':'#e0e0e0'; this.style.boxShadow='none';">
+                                    <small id="emailError" class="error-text" style="color: #e74c3c; font-size: 0.85rem; font-weight: 700;"></small>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label style="color: var(--text-dark); font-weight: 800; margin-bottom: 0.8rem; display: block; font-size: 0.95rem; letter-spacing: 0.4px;">
+                                        📱 Telefon Numaranız <span style="color: #e74c3c; font-weight: 900;">*</span>
+                                    </label>
+                                    <div class="phone-input-grid" style="display: grid; grid-template-columns: 140px 1fr; gap: 0.8rem; align-items: center;">
+                                        <select class="form-control" id="country" onchange="updatePhonePlaceholder(); validatePhone(document.getElementById('phone').value, this.value);" style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1rem 0.75rem; font-size: 0.95rem; padding-left: 50px; background-color: white; cursor: pointer; transition: all 0.3s ease; font-weight: 600; width: 100%;" onfocus="this.style.borderColor='#2ecc71'; this.style.boxShadow='0 0 0 3px rgba(46, 204, 113, 0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+                                            <option value="+90" data-country="TR" data-name="Türkiye" data-length="10" data-prefix="5">🇹🇷 +90</option>
+                                            <option value="+1" data-country="US" data-name="USA" data-length="10" data-prefix="">🇺🇸 +1</option>
+                                            <option value="+44" data-country="GB" data-name="UK" data-length="10" data-prefix="">🇬🇧 +44</option>
+                                            <option value="+49" data-country="DE" data-name="Almanya" data-length="11" data-prefix="">🇩🇪 +49</option>
+                                            <option value="+33" data-country="FR" data-name="Fransa" data-length="9" data-prefix="">🇫🇷 +33</option>
+                                            <option value="+39" data-country="IT" data-name="İtalya" data-length="10" data-prefix="">🇮🇹 +39</option>
+                                            <option value="+34" data-country="ES" data-name="İspanya" data-length="9" data-prefix="">🇪🇸 +34</option>
+                                            <option value="+31" data-country="NL" data-name="Hollanda" data-length="9" data-prefix="">🇳🇱 +31</option>
+                                            <option value="+43" data-country="AT" data-name="Avusturya" data-length="10" data-prefix="">🇦🇹 +43</option>
+                                            <option value="+41" data-country="CH" data-name="İsviçre" data-length="9" data-prefix="">🇨🇭 +41</option>
+                                        </select>
+                                        <input type="tel" class="form-control" id="phone" placeholder="5XX XXX XX XX" required maxlength="11" style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1rem; font-size: 0.95rem; transition: all 0.3s ease; background: white; font-weight: 600; width: 100%;" inputmode="numeric" onkeyup="validatePhone(this.value, document.getElementById('country').value);" onfocus="this.style.borderColor='#f39c12'; this.style.boxShadow='0 0 0 3px rgba(243, 156, 18, 0.1)';" onblur="this.style.borderColor=document.getElementById('phone').classList.contains('valid')?'#1dd1a1':'#e0e0e0'; this.style.boxShadow='none';">
+                                    </div>
+                                    <small id="phoneError" class="error-text" style="color: #e74c3c; font-size: 0.85rem; font-weight: 700;"></small>
+                                </div>
+                            </div>
+
+                            <!-- STEP 2: SUBJECT -->
+                            <div id="step2" class="form-step" style="display: none;">
+                                <div class="mb-4">
+                                    <label for="subject" style="color: var(--text-dark); font-weight: 800; margin-bottom: 0.8rem; display: block; font-size: 0.95rem; letter-spacing: 0.4px;">
+                                        🎯 Konu / Uzmanlaşma Alanı <span style="color: #e74c3c; font-weight: 900;">*</span>
+                                    </label>
+                                    <select class="form-control" id="subject" required style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1rem; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; background-color: white; font-weight: 600;" onfocus="this.style.borderColor='#9b59b6'; this.style.boxShadow='0 0 0 3px rgba(155, 89, 182, 0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+                                        <option value="">-- Konu Seçiniz --</option>
+                                        <option value="psikoloji">🧠 Psikolojik Destek</option>
+                                        <option value="uyku-beslenme">😴 Uyku & Beslenme</option>
+                                        <option value="mentorlik">🚀 Mentörlük Programı</option>
+                                        <option value="egitim">📚 Bireysel Eğitim</option>
+                                        <option value="aile">👨‍👩‍👧‍👦 Aile Danışmanlığı</option>
+                                        <option value="genel">❓ Genel Sorular</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- STEP 3: MESSAGE & REVIEW -->
+                            <div id="step3" class="form-step" style="display: none;">
+                                <div class="mb-4">
+                                    <label for="message" class="form-label" style="color: var(--text-dark); font-weight: 800; margin-bottom: 0.8rem; display: block; font-size: 0.95rem; letter-spacing: 0.4px;">
+                                        💬 Mesajınız <span style="color: #e74c3c; font-weight: 900;">*</span>
+                                    </label>
+                                    <textarea class="form-control" id="message" rows="6" placeholder="Lütfen mesajınızı ve sorularınızı buraya yazınız..." required style="border: 2.5px solid #e0e0e0; border-radius: 1rem; padding: 1.2rem; font-size: 0.95rem; resize: none; transition: all 0.3s ease; background: white; font-weight: 500; font-family: inherit; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" onfocus="this.style.borderColor='#e67e22'; this.style.boxShadow='0 0 0 3px rgba(230, 126, 34, 0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)';"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="form-button-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 2rem;" id="navigationButtons">
+                                <button type="button" id="prevBtn" onclick="previousStep()" style="display: none; background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); color: white; padding: 1.1rem 1.5rem; font-weight: 800; border-radius: 1.1rem; border: none; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.7rem; font-size: 0.98rem; box-shadow: 0 8px 25px rgba(149, 165, 166, 0.4); letter-spacing: 0.5px; text-transform: uppercase;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'; this.style.boxShadow='0 12px 35px rgba(149, 165, 166, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(149, 165, 166, 0.4)';">
+                                    <i class="fas fa-arrow-left"></i> Geri
+                                </button>
+
+                                <button type="button" id="nextBtn" onclick="nextStep()" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 1.1rem 1.5rem; font-weight: 800; border-radius: 1.1rem; border: none; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.7rem; font-size: 0.98rem; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4); letter-spacing: 0.5px; text-transform: uppercase;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'; this.style.boxShadow='0 12px 35px rgba(52, 152, 219, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.4)';">
+                                    İleri <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Submit Buttons (visible only on step 3) -->
+                            <div class="form-button-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 2rem;" id="submitButtons">
+                                <button type="button" onclick="sendViaWhatsApp()" class="btn w-100" style="background: linear-gradient(135deg, #25d366 0%, #1dd1a1 50%, #10ac84 100%); color: white; padding: 1.1rem 1.5rem; font-weight: 800; border-radius: 1.1rem; border: none; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.7rem; font-size: 0.98rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); letter-spacing: 0.5px; text-transform: uppercase;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'; this.style.boxShadow='0 12px 35px rgba(37, 211, 102, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(37, 211, 102, 0.4)';">
+                                    <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i> WhatsApp Gönder
+                                </button>
+
+                                <button type="button" onclick="sendViaEmail()" class="btn w-100" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 50%, #1abc9c 100%); color: white; padding: 1.1rem 1.5rem; font-weight: 800; border-radius: 1.1rem; border: none; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.7rem; font-size: 0.98rem; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4); letter-spacing: 0.5px; text-transform: uppercase;" onmouseover="this.style.transform='translateY(-4px) scale(1.02)'; this.style.boxShadow='0 12px 35px rgba(52, 152, 219, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.4)';">
+                                    <i class="fas fa-envelope"></i> E-posta Gönder
+                                </button>
+                            </div>
+
+                            <div class="info-box" style="background: linear-gradient(135deg, rgba(26, 188, 156, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%); padding: 1.3rem; border-radius: 1rem; border-left: 5px solid #1abc9c; text-align: center; box-shadow: 0 4px 15px rgba(26, 188, 156, 0.1);">
+                                <p style="margin: 0; color: #1abc9c; font-size: 0.9rem; font-weight: 700;"><i class="fas fa-check-circle"></i> Tüm alanları doğru şekilde doldurduktan sonra gönderibilirsiniz</p>
+                            </div>
+                        </form>
+
+                        <!-- Notification Overlay -->
+                        <div id="notificationOverlay" class="notification-overlay">
+                            <div class="notification-modal">
+                                <div id="notificationIcon" class="notification-icon success">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3 id="notificationTitle" class="notification-title">Başarılı!</h3>
+                                <p id="notificationMessage" class="notification-message">Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.</p>
+                                <button onclick="closeNotification()" class="notification-button">Tamam</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5" style="border-top: 2px solid #e0e0e0;">
+                <div class="col-12">
+                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 3rem; font-size: 1.5rem; text-align: center;">
+                        <i class="fas fa-lightbulb"></i> Sınav Ailesi Hakkında
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row mt-3 mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 2.5rem; border-radius: 1.2rem; border-left: 5px solid #1abc9c;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                            Bütünsel Öğrenci Geliştirme Modeli
+                        </h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Sınav Ailesi, öğrencilerin sadece akademik başarı değil, tüm yönlerden gelişimini hedefleyen bütünsel bir model sunmaktadır. Psikolojik sağlık, fiziksel sağlık, zaman yönetimi, mentörlük yetenekleri ve eğitim stratejileri - tüm bu unsurlar birlikte çalışarak öğrencilerin gerçek potansiyellerini ortaya çıkarmasını sağlar.
+                        </p>
+                        <p style="color: var(--text-light); line-height: 1.8;">
+                            Deneyimli uzmanlarımız, her öğrencinin bireysel ihtiyaçlarını anlayarak özelleştirilmiş rehberlik sunmaktadırlar. Hedefimiz, öğrencileri sınavda başarılı olmakla birlikte, yaşam boyunca kendilerine güvenen, kendilerini geliştirebilen bireyler haline dönüştürmektir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem; text-align: center;">
+                        <i class="fas fa-clock"></i> Çalışma Saatleri
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <table class="table" style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); overflow: hidden;">
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid #e0e0e0;">
+                                        <td style="padding: 1.2rem; color: var(--text-dark); font-weight: 600;">Pazartesi - Pazar</td>
+                                        <td style="padding: 1.2rem; color: #1abc9c; font-weight: 700; text-align: right;">7/24</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sınav Ailesi</h4>
+                    <p>Bütünsel öğrenci geliştirme modeliyle başarı için yeni bir boyut açıyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="index.html#about">Hakkında</a></li>
+                        <li><a href="index.html#experts">Uzmanlar</a></li>
+                        <li><a href="index.html#services">Hizmetler</a></li>
+                        <li><a href="ailedanismanligi.html">Aile Danışmanlığı</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Yasal</h4>
+                    <ul>
+                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                        <li><a href="kullanim-sartlari.html">Kullanım Şartları</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583805551118" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sinavailesi2025?igsh=MWl0bGhhcm5paTR3cQ==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905455521485" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sınav Ailesi. Tüm hakları saklıdır.</p>
+                <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255, 255, 255, 0.7); border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1rem;">
+                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin sahibiyle iletişime geçebilirsiniz.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentStep = 1;
+
+        // Step sistemi başlatma
+        function initializeStepForm() {
+            showStep(currentStep);
+        }
+
+        // Belirtilen adımı göster
+        function showStep(step) {
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const step3 = document.getElementById('step3');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const navigationButtons = document.getElementById('navigationButtons');
+            const submitButtons = document.getElementById('submitButtons');
+            
+            // Tüm adımları gizle
+            if (step1) step1.style.display = 'none';
+            if (step2) step2.style.display = 'none';
+            if (step3) step3.style.display = 'none';
+            
+            // Seçilen adımı göster
+            if (step === 1) {
+                if (step1) step1.style.display = 'block';
+                if (prevBtn) prevBtn.style.display = 'none';
+                if (nextBtn) nextBtn.style.display = 'flex';
+                if (navigationButtons) navigationButtons.style.display = 'grid';
+                if (submitButtons) submitButtons.style.display = 'none';
+                updateProgressIndicator(1);
+            } else if (step === 2) {
+                if (step2) step2.style.display = 'block';
+                if (prevBtn) prevBtn.style.display = 'flex';
+                if (nextBtn) nextBtn.style.display = 'flex';
+                if (navigationButtons) navigationButtons.style.display = 'grid';
+                if (submitButtons) submitButtons.style.display = 'none';
+                updateProgressIndicator(2);
+            } else if (step === 3) {
+                if (step3) step3.style.display = 'block';
+                if (prevBtn) prevBtn.style.display = 'flex';
+                if (nextBtn) nextBtn.style.display = 'none';
+                if (navigationButtons) navigationButtons.style.display = 'none';
+                if (submitButtons) submitButtons.style.display = 'grid';
+                updateProgressIndicator(3);
+            }
+            
+            // Sayfanın üstüne kaydır
+            document.querySelector('.contact-form-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Progress indicator'ü güncelle
+        function updateProgressIndicator(step) {
+            const indicators = document.querySelectorAll('[class="progress-indicator"]');
+            
+            // Tüm sayıları ve çizgileri sıfırla
+            document.querySelectorAll('.step-number').forEach((el, index) => {
+                if (index < step) {
+                    el.style.background = 'linear-gradient(135deg, #1abc9c, #00d4d4)';
+                    el.style.color = 'white';
+                } else {
+                    el.style.background = '#e0e0e0';
+                    el.style.color = '#999';
+                }
+            });
+
+            document.querySelectorAll('.step-line').forEach((el, index) => {
+                if (index < step - 1) {
+                    el.style.background = 'linear-gradient(90deg, #1abc9c, #00d4d4)';
+                } else {
+                    el.style.background = '#e0e0e0';
+                }
+            });
+        }
+
+        // Sonraki adıma git
+        function nextStep() {
+            if (currentStep === 1) {
+                // Adım 1'i doğrula
+                const nameValidation = validateName(document.getElementById('name').value);
+                const emailValidation = validateEmail(document.getElementById('email').value);
+                const phoneValidation = validatePhone(document.getElementById('phone').value, document.getElementById('country').value);
+
+                // Hataları temizle
+                document.getElementById('nameError').style.display = 'none';
+                document.getElementById('emailError').style.display = 'none';
+                document.getElementById('phoneError').style.display = 'none';
+
+                let isValid = true;
+
+                if (!nameValidation.valid) {
+                    document.getElementById('nameError').textContent = nameValidation.error;
+                    document.getElementById('nameError').style.display = 'block';
+                    isValid = false;
+                }
+
+                if (!emailValidation.valid) {
+                    document.getElementById('emailError').textContent = emailValidation.error;
+                    document.getElementById('emailError').style.display = 'block';
+                    isValid = false;
+                }
+
+                if (!phoneValidation.valid) {
+                    document.getElementById('phoneError').textContent = phoneValidation.error;
+                    document.getElementById('phoneError').style.display = 'block';
+                    isValid = false;
+                }
+
+                if (!isValid) return;
+            } else if (currentStep === 2) {
+                // Adım 2'yi doğrula
+                const subject = document.getElementById('subject').value;
+                if (!subject) {
+                    alert('Lütfen bir konu seçiniz!');
+                    return;
+                }
+            }
+
+            if (currentStep < 3) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+
+        // Önceki adıma git
+        function previousStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        // Notification göster
+        function showNotification(title, message, isSuccess = true) {
+            const overlay = document.getElementById('notificationOverlay');
+            const icon = document.getElementById('notificationIcon');
+            const titleEl = document.getElementById('notificationTitle');
+            const messageEl = document.getElementById('notificationMessage');
+
+            titleEl.textContent = title;
+            messageEl.textContent = message;
+
+            if (isSuccess) {
+                icon.className = 'notification-icon success';
+                icon.innerHTML = '<i class="fas fa-check"></i>';
+            } else {
+                icon.className = 'notification-icon error';
+                icon.innerHTML = '<i class="fas fa-times"></i>';
+            }
+
+            overlay.style.display = 'flex';
+
+            // 4 saniye sonra otomatik kapat
+            setTimeout(() => {
+                closeNotification();
+            }, 4000);
+        }
+
+        // Notification kapat
+        function closeNotification() {
+            const overlay = document.getElementById('notificationOverlay');
+            overlay.style.display = 'none';
+        }
+
+        // Overlay'e tıklanırsa kapat
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('notificationOverlay');
+            if (overlay) {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeNotification();
+                    }
+                });
+            }
+        }, { once: true });
+
+        // Sayfa tamamen yüklendikten sonra form verilerini yükle
+        window.addEventListener('load', function() {
+            const savedFormData = localStorage.getItem('contactFormData');
+            if (savedFormData) {
+                try {
+                    const formData = JSON.parse(savedFormData);
+                    
+                    // Form alanlarına verileri doldur
+                    if (formData.name) document.getElementById('name').value = formData.name;
+                    if (formData.email) document.getElementById('email').value = formData.email;
+                    if (formData.country) document.getElementById('country').value = formData.country;
+                    if (formData.phone) document.getElementById('phone').value = formData.phone;
+                    if (formData.subject) document.getElementById('subject').value = formData.subject;
+                    if (formData.message) document.getElementById('message').value = formData.message;
+                    
+                    // Bayrağı güncelle
+                    if (formData.country) {
+                        updateFlagBackground();
+                    }
+                    
+                    console.log('Form verileri localStorage\'dan yüklendi:', formData);
+                } catch (e) {
+                    console.log('localStorage verisi yüklenemedi:', e);
+                }
+            }
+        }, { once: true });
+
+
+        // Ülke telefon kuralları
+        const countryRules = {
+            '+90': { name: 'Türkiye', length: 10, prefix: '5', pattern: /^5/ },
+            '+1': { name: 'USA', length: 10, prefix: '', pattern: /^[2-9]/ },
+            '+44': { name: 'UK', length: 10, prefix: '', pattern: /^[1-9]/ },
+            '+49': { name: 'Almanya', length: 11, prefix: '', pattern: /^[1-9]/ },
+            '+33': { name: 'Fransa', length: 9, prefix: '', pattern: /^[1-9]/ },
+            '+39': { name: 'İtalya', length: 10, prefix: '', pattern: /^[1-9]/ },
+            '+34': { name: 'İspanya', length: 9, prefix: '', pattern: /^[1-9]/ },
+            '+31': { name: 'Hollanda', length: 9, prefix: '', pattern: /^[1-6]/ },
+            '+43': { name: 'Avusturya', length: 10, prefix: '', pattern: /^[1-9]/ },
+            '+41': { name: 'İsviçre', length: 9, prefix: '', pattern: /^[1-9]/ }
+        };
+
+        function updateFlagBackground() {
+            const countrySelect = document.getElementById('country');
+            const selectedOption = countrySelect.options[countrySelect.selectedIndex];
+            const countryCode = selectedOption.dataset.country;
+            
+            // Flagcdn.com API'sinden bayrak alıyoruz
+            const flagUrl = `https://flagcdn.com/h20/${countryCode.toLowerCase()}.png`;
+            countrySelect.style.backgroundImage = `url('${flagUrl}')`;
+        }
+
+        function createOptionWithFlag(countryCode, countryName, countryPhone) {
+            const option = document.createElement('option');
+            option.value = countryPhone;
+            option.dataset.country = countryCode;
+            
+            // Unicode bayrak karakterini ekle
+            const flagEmoji = getFlagEmoji(countryCode);
+            option.textContent = `${flagEmoji} ${countryName} (${countryPhone})`;
+            
+            return option;
+        }
+
+        function getFlagEmoji(countryCode) {
+            // ISO 3166-1 ülke kodlarını bayrak emoji'lerine dönüştür
+            const flagMap = {
+                'TR': '🇹🇷',
+                'US': '🇺🇸',
+                'GB': '🇬🇧',
+                'DE': '🇩🇪',
+                'FR': '🇫🇷',
+                'IT': '🇮🇹',
+                'ES': '🇪🇸',
+                'NL': '🇳🇱',
+                'AT': '🇦🇹',
+                'CH': '🇨🇭'
+            };
+            return flagMap[countryCode] || '🌍';
+        }
+
+        function updatePhonePlaceholder() {
+            const countrySelect = document.getElementById('country');
+            const selectedOption = countrySelect.options[countrySelect.selectedIndex];
+            const prefix = selectedOption.dataset.prefix || '';
+            const length = selectedOption.dataset.length || '10';
+            
+            const phoneInput = document.getElementById('phone');
+            // Maxlength'i ülkeye göre ayarla
+            phoneInput.maxLength = parseInt(length);
+            
+            if (prefix) {
+                phoneInput.placeholder = prefix + ' ' + 'X'.repeat(length - 1).match(/.{1,3}/g).join(' ');
+            } else {
+                phoneInput.placeholder = 'X'.repeat(length).match(/.{1,3}/g).join(' ');
+            }
+            
+            updateFlagBackground();
+        }
+
+        // URL parametrelerinden form otomatik doldurma
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeStepForm();
+            updatePhonePlaceholder();
+            updateFlagBackground();
+
+            // Dropdown açılıp kapanışında bayrakları göster/gizle
+            const countrySelect = document.getElementById('country');
+            countrySelect.addEventListener('focus', function() {
+                // Dropdown açıldığında tüm seçenekler bayrak emoji gösterecek
+                this.style.fontSize = '1.1rem';
+            });
+            
+            countrySelect.addEventListener('blur', function() {
+                this.style.fontSize = '1.05rem';
+            });
+
+            // Telefon numarası - sadece rakam girişi
+            const phoneInput = document.getElementById('phone');
+            phoneInput.addEventListener('input', function(e) {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+
+            // Ülke değişiminde placeholder güncelle
+            document.getElementById('country').addEventListener('change', updatePhonePlaceholder);
+
+            // Önce localStorage'dan kontrol et
+            const savedData = localStorage.getItem('contactFormData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                if (data.name) document.getElementById('name').value = data.name;
+                if (data.email) document.getElementById('email').value = data.email;
+                if (data.country) document.getElementById('country').value = data.country;
+                if (data.phone) document.getElementById('phone').value = data.phone;
+                if (data.subject) document.getElementById('subject').value = data.subject;
+                if (data.message) document.getElementById('message').value = data.message;
+                
+                updatePhonePlaceholder();
+                
+                // Kullanıldı, sil
+                localStorage.removeItem('contactFormData');
+            }
+
+            // Sonra URL parametrelerini kontrol et
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            if (urlParams.has('name')) {
+                document.getElementById('name').value = decodeURIComponent(urlParams.get('name'));
+            }
+            if (urlParams.has('email')) {
+                document.getElementById('email').value = decodeURIComponent(urlParams.get('email'));
+            }
+            if (urlParams.has('country')) {
+                document.getElementById('country').value = decodeURIComponent(urlParams.get('country'));
+                updatePhonePlaceholder();
+            }
+            if (urlParams.has('phone')) {
+                document.getElementById('phone').value = decodeURIComponent(urlParams.get('phone')).replace(/[^0-9]/g, '');
+            }
+            if (urlParams.has('subject')) {
+                document.getElementById('subject').value = decodeURIComponent(urlParams.get('subject'));
+            }
+            if (urlParams.has('message')) {
+                document.getElementById('message').value = decodeURIComponent(urlParams.get('message'));
+            }
+        });
+
+        // Ad Soyad Validasyonu - Visual Feedback ile
+        function validateName(name) {
+            const trimmed = name.trim();
+            const nameInput = document.getElementById('name');
+            const nameError = document.getElementById('nameError');
+            
+            if (trimmed.length < 5) {
+                nameInput.classList.remove('valid');
+                nameInput.classList.add('invalid');
+                nameError.innerHTML = '<i class="fas fa-times-circle"></i> Ad Soyad minimum 5 karakter olmalıdır.';
+                nameError.classList.add('show');
+                return { valid: false, error: 'Ad Soyad minimum 5 karakter olmalıdır.' };
+            }
+            const parts = trimmed.split(/\s+/);
+            if (parts.length < 2) {
+                nameInput.classList.remove('valid');
+                nameInput.classList.add('invalid');
+                nameError.innerHTML = '<i class="fas fa-times-circle"></i> Lütfen adınız ve soyadınızı giriniz (aralarında boşluk olmalı).';
+                nameError.classList.add('show');
+                return { valid: false, error: 'Lütfen adınız ve soyadınızı giriniz (aralarında boşluk olmalı).' };
+            }
+            nameInput.classList.remove('invalid');
+            nameInput.classList.add('valid');
+            nameError.classList.remove('show');
+            return { valid: true };
+        }
+
+        // E-posta Validasyonu - Visual Feedback ile
+        function validateEmail(email) {
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            
+            if (!email.includes('@')) {
+                emailInput.classList.remove('valid');
+                emailInput.classList.add('invalid');
+                emailError.innerHTML = '<i class="fas fa-times-circle"></i> Geçerli bir e-posta adresi giriniz (@ işareti içermelidir).';
+                emailError.classList.add('show');
+                return { valid: false, error: 'Geçerli bir e-posta adresi giriniz (@ işareti içermelidir).' };
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                emailInput.classList.remove('valid');
+                emailInput.classList.add('invalid');
+                emailError.innerHTML = '<i class="fas fa-times-circle"></i> Geçerli bir e-posta adresi giriniz.';
+                emailError.classList.add('show');
+                return { valid: false, error: 'Geçerli bir e-posta adresi giriniz.' };
+            }
+            emailInput.classList.remove('invalid');
+            emailInput.classList.add('valid');
+            emailError.classList.remove('show');
+            return { valid: true };
+        }
+
+        // Telefon Validasyonu - Visual Feedback ile
+        function validatePhone(phone, country) {
+            const rules = countryRules[country];
+            const phoneInput = document.getElementById('phone');
+            const phoneError = document.getElementById('phoneError');
+            
+            if (!rules) {
+                phoneInput.classList.remove('valid');
+                phoneInput.classList.add('invalid');
+                phoneError.innerHTML = '<i class="fas fa-times-circle"></i> Lütfen geçerli bir ülke seçiniz.';
+                phoneError.classList.add('show');
+                return { valid: false, error: 'Lütfen geçerli bir ülke seçiniz.' };
+            }
+
+            const cleanedPhone = phone.replace(/[^0-9]/g, '');
+            
+            // Uzunluk kontrolü
+            if (cleanedPhone.length !== parseInt(rules.length)) {
+                phoneInput.classList.remove('valid');
+                phoneInput.classList.add('invalid');
+                phoneError.innerHTML = `<i class="fas fa-times-circle"></i> ${rules.name} numaraları ${rules.length} rakam olmalıdır. (Şu anda: ${cleanedPhone.length})`;
+                phoneError.classList.add('show');
+                return { valid: false, error: `${rules.name} numaraları ${rules.length} rakam olmalıdır. (Şu anda: ${cleanedPhone.length})` };
+            }
+
+            // Ön hane kontrolü (türkiye için 5 ile başlaması zorunlu)
+            if (rules.prefix && !cleanedPhone.startsWith(rules.prefix)) {
+                phoneInput.classList.remove('valid');
+                phoneInput.classList.add('invalid');
+                phoneError.innerHTML = `<i class="fas fa-times-circle"></i> ${rules.name} numaraları ${rules.prefix} ile başlamalıdır.`;
+                phoneError.classList.add('show');
+                return { valid: false, error: `${rules.name} numaraları ${rules.prefix} ile başlamalıdır.` };
+            }
+
+            // Pattern kontrolü
+            if (!rules.pattern.test(cleanedPhone)) {
+                phoneInput.classList.remove('valid');
+                phoneInput.classList.add('invalid');
+                phoneError.innerHTML = `<i class="fas fa-times-circle"></i> ${rules.name} için geçerli olmayan numara formatı.`;
+                phoneError.classList.add('show');
+                return { valid: false, error: `${rules.name} için geçerli olmayan numara formatı.` };
+            }
+
+            // Aynı ülke kodunun tekrar girilmesini engelle
+            if (cleanedPhone.startsWith(country.replace('+', ''))) {
+                phoneInput.classList.remove('valid');
+                phoneInput.classList.add('invalid');
+                phoneError.innerHTML = '<i class="fas fa-times-circle"></i> Ülke kodunu tekrar girmeyiniz. Sadece numarayı giriniz.';
+                phoneError.classList.add('show');
+                return { valid: false, error: `Ülke kodunu tekrar girmeyiniz. Sadece numarayı giriniz.` };
+            }
+
+            phoneInput.classList.remove('invalid');
+            phoneInput.classList.add('valid');
+            phoneError.classList.remove('show');
+            return { valid: true };
+        }
+
+        function sendViaWhatsApp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const country = document.getElementById('country').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Hataları temizle
+            document.getElementById('nameError').style.display = 'none';
+            document.getElementById('emailError').style.display = 'none';
+            document.getElementById('phoneError').style.display = 'none';
+
+            // Validasyonlar
+            let isValid = true;
+
+            const nameValidation = validateName(name);
+            if (!nameValidation.valid) {
+                document.getElementById('nameError').textContent = nameValidation.error;
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+
+            const emailValidation = validateEmail(email);
+            if (!emailValidation.valid) {
+                document.getElementById('emailError').textContent = emailValidation.error;
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+
+            const phoneValidation = validatePhone(phone, country);
+            if (!phoneValidation.valid) {
+                document.getElementById('phoneError').textContent = phoneValidation.error;
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            }
+
+            if (!subject) {
+                alert('Lütfen bir konu seçiniz!');
+                isValid = false;
+            }
+
+            if (!message) {
+                alert('Lütfen mesajınızı giriniz!');
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Konu başlıklarını Türkçeleştir
+            const subjectMap = {
+                'psikoloji': 'Psikolojik Destek',
+                'uyku-beslenme': 'Uyku & Beslenme',
+                'mentorlik': 'Mentörlük Programı',
+                'egitim': 'Bireysel Eğitim',
+                'aile': 'Aile Danışmanlığı',
+                'genel': 'Genel Sorular'
+            };
+
+            const subjectDisplay = subjectMap[subject] || subject;
+            const fullPhone = country + phone;
+            const countryName = countryRules[country].name;
+
+            // Konu bazlı WhatsApp numarası seçimi
+            // Psikolojik Destek veya Aile Danışmanlığı seçilirse: 05455521485
+            // Diğer konular: 05512515671
+            const whatsappNumber = (subject === 'psikoloji' || subject === 'aile') ? '905455521485' : '905512515671';
+
+            const whatsappMessage = `*🆕 YENİ İLETİŞİM TALEBİ*
+━━━━━━━━━━━━━━━━━━━━━
+
+*👤 Danışan Bilgileri:*
+📝 *Ad Soyad:* ${name}
+📧 *E-posta:* ${email}
+📱 *Telefon (${countryName}):* ${fullPhone}
+
+*📋 İstek Detayları:*
+🎯 *Konu:* ${subjectDisplay}
+💬 *Mesaj:*
+${message}
+
+━━━━━━━━━━━━━━━━━━━━━
+_Bu mesaj iletişim formu aracılığıyla otomatik olarak gönderilmiştir._`;
+            
+            // Form verilerini localStorage'e kaydet
+            const formData = { name, email, country, phone, subject, message };
+            localStorage.setItem('contactFormData', JSON.stringify(formData));
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Notification göster
+            showNotification('Başarılı!', 'Mesajınız WhatsApp\'ta gönderilmek üzere hazırlanıyor. En kısa sürede sizinle iletişime geçeceğiz.', true);
+            
+            // 1.5 saniye sonra WhatsApp'ı aç
+            setTimeout(() => {
+                window.open(whatsappURL, '_blank');
+            }, 1500);
+            
+            // Form temizle ve step 1'e dön
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                updatePhonePlaceholder();
+                currentStep = 1;
+                showStep(currentStep);
+            }, 2000);
+
+            // localStorage'ı temizle - 10 saniye sonra (kullanıcı geri dönüp yeniden form doldurabilsin)
+            setTimeout(() => {
+                localStorage.removeItem('contactFormData');
+            }, 10000);
+        }
+
+        function sendViaEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const country = document.getElementById('country').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Hataları temizle
+            document.getElementById('nameError').style.display = 'none';
+            document.getElementById('emailError').style.display = 'none';
+            document.getElementById('phoneError').style.display = 'none';
+
+            // Validasyonlar
+            let isValid = true;
+
+            const nameValidation = validateName(name);
+            if (!nameValidation.valid) {
+                document.getElementById('nameError').textContent = nameValidation.error;
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+
+            const emailValidation = validateEmail(email);
+            if (!emailValidation.valid) {
+                document.getElementById('emailError').textContent = emailValidation.error;
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+
+            const phoneValidation = validatePhone(phone, country);
+            if (!phoneValidation.valid) {
+                document.getElementById('phoneError').textContent = phoneValidation.error;
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            }
+
+            if (!subject) {
+                alert('Lütfen bir konu seçiniz!');
+                isValid = false;
+            }
+
+            if (!message) {
+                alert('Lütfen mesajınızı giriniz!');
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Konu başlıklarını Türkçeleştir
+            const subjectMap = {
+                'psikoloji': 'Psikolojik Destek',
+                'uyku-beslenme': 'Uyku & Beslenme',
+                'mentorlik': 'Mentörlük Programı',
+                'egitim': 'Bireysel Eğitim',
+                'aile': 'Aile Danışmanlığı',
+                'genel': 'Genel Sorular'
+            };
+
+            const subjectDisplay = subjectMap[subject] || subject;
+            const fullPhone = country + phone;
+            const countryName = countryRules[country].name;
+
+            const emailSubject = `Yeni İletişim Formu: ${subjectDisplay}`;
+            const emailBody = `İsim: ${name}
+E-posta: ${email}
+Ülke: ${countryName}
+Telefon: ${fullPhone}
+Konu: ${subjectDisplay}
+
+Mesaj:
+${message}`;
+            
+            const mailtoLink = `mailto:sinavailesi2025@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Form verilerini localStorage'e kaydet
+            const formData = { name, email, country, phone, subject, message };
+            localStorage.setItem('contactFormData', JSON.stringify(formData));
+            
+            // Notification göster
+            showNotification('Başarılı!', 'Mesajınız e-posta ile gönderilmek üzere hazırlanıyor. En kısa sürede sizinle iletişime geçeceğiz.', true);
+            
+            // 1.5 saniye sonra e-mail client'ını aç
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 1500);
+            
+            // Form temizle ve step 1'e dön
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                updatePhonePlaceholder();
+                currentStep = 1;
+                showStep(currentStep);
+            }, 2000);
+
+            // localStorage'ı temizle - 10 saniye sonra
+            setTimeout(() => {
+                localStorage.removeItem('contactFormData');
+            }, 10000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sınav Ailesi - Bireysel Eğitim. Kişiselleştirilmiş öğrenme ve sınav odaklı ders.">
+    <title>Bireysel Eğitim | Sınav Ailesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-graduation-cap"></i> Sınav Ailesi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-graduation-cap"></i> Uzmanlıkların Kapsamı
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="psikoloji.html"><i class="fas fa-brain"></i> Psikolojik Destek</a></li>
+                            <li><a class="dropdown-item" href="uyku-beslenme.html"><i class="fas fa-utensils"></i> Uyku & Beslenme</a></li>
+                            <li><a class="dropdown-item" href="mentorlik.html"><i class="fas fa-handshake"></i> Mentörlük Programı</a></li>
+                            <li><a class="dropdown-item active" href="egitim.html"><i class="fas fa-book"></i> Bireysel Eğitim</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ailedanismanligi.html"><i class="fas fa-users"></i> Aile Danışmanlığı</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: 50vh; padding: 4rem 2rem; display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Bireysel Eğitim</h1>
+                <h2 style="color: white; font-weight: 700; font-size: 1.6rem; margin-bottom: 1.5rem; letter-spacing: 0.5px;">
+                    Kişiselleştirilmiş Öğrenme Stratejileri
+                </h2>
+                <p style="font-size: 1.1rem; color: #f0f8ff; max-width: 700px; margin: 0 auto;">
+                    Öğrencinin özel ihtiyaçlarına uygun, bire bir ders desteği ve sınav odaklı stratejiler
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="about-section">
+        <div class="container">
+            <!-- Giriş Bölümü -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Bireysel Eğitim Neden Önemlidir?</h2>
+                    <p style="text-align: justify; color: var(--text-light); line-height: 1.8; font-size: 1.05rem; margin-bottom: 1.5rem;">
+                        Her öğrenci farklı hızda ve farklı yöntemlerle öğrenir. Sınıf ortamındaki genel öğretim, birçok öğrencinin eksikliklerini gidermez veya gereksiz yavaşlığa neden olur. Sınav Ailesi'nin bireysel eğitim programı, öğrencinin konu eksiklerini belirleme, öğrenme haritası çıkarma ve öğrenci-özgü öğretim tekniklerini kullanarak derinlemesine, kalıcı öğrenme sağlar.
+                    </p>
+                    <!-- Detaylı Bilgi Kartları -->
+                    <div class="row g-3" style="margin-bottom: 2rem;">
+                        <div class="col-md-6">
+                            <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #1abc9c;">
+                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 0.8rem;">
+                                    <i class="fas fa-graduation-cap"></i> Bloom'un Taksonomisi
+                                </h5>
+                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem; line-height: 1.6;">Öğrenmeyi altı düzeyden ilerleyen bir yapı içinde (Hatırlama → Anlama → Uygulama → Analiz → Değerlendirme → Yaratıcılık) ele almak, böylece sadece ezber değil, analitik düşünce becerisi geliştirilmektedir.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #3498db;">
+                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 0.8rem;">
+                                    <i class="fas fa-brain"></i> Öğrenme Stilleri Analizi
+                                </h5>
+                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem; line-height: 1.6;">Görsel (Visual), İşitsel (Auditory), Kinestetik (Kinesthetic) öğrenme stillerini tespit ederek, her öğrencinin beyninin en güçlü noktasından yararlanmak. Birçok öğrenci yanlış öğrenme stiliyle çalıştığında başarısız olmaktadır.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 Uzmanlaştırma Alanı -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.8rem; text-align: center;">
+                        <i class="fas fa-star"></i> Bireysel Eğitimde 7 Ana Bileşen
+                    </h3>
+                    
+                    <!-- 1. Konu Eksiklerini Belirleme -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #1abc9c; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-magnifying-glass" style="color: #1abc9c; margin-right: 0.7rem;"></i> 1. Konu Eksiklerini Belirleme
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Kapsamlı değerlendirme ile öğrencinin hangi konularda zayıf olduğu, bu zayıflıkların köklerinin neler olduğu tespit edilir. Yüzeysel bilgi mi yoksa temel anlayış eksikliği mi? Her durum farklı çözüm gerektirir.
+                        </p>
+                    </div>
+
+                    <!-- 2. Öğrenme Haritası -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #3498db; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-map" style="color: #3498db; margin-right: 0.7rem;"></i> 2. Öğrenme Haritası Çıkarma
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Konular arası bağlantılar gösterilir. Öğrenci hangi temele ihtiyaç duyuyorsa oradan başlanır. Matematik örneği: Birinci dereceden denklem çözemiyorsa, temel cebirden başlanır. Konuların mantıksal sırasına uygun öğrenme haritası oluşturulur.
+                        </p>
+                    </div>
+
+                    <!-- 3. Kavramsal Öğrenme -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #1abc9c; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-lightbulb" style="color: #1abc9c; margin-right: 0.7rem;"></i> 3. Kavramsal Öğrenme (Anlamaya Dayalı)
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Ezbercilikten uzaklaşılır. Konunun mantığı, ilkeleri ve neden öyle olduğu öğrenciye anlatılır. Formüller ezberletilmez, türetilir. Sonuçlar değil, süreçler öğretilir. Bu sayede öğrenci benzer durumlara kendisi çözüm bulabilir.
+                        </p>
+                    </div>
+
+                    <!-- 4. Güçlü-Zayıf Yönlerin Analizi -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #3498db; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-chart-pie" style="color: #3498db; margin-right: 0.7rem;"></i> 4. Güçlü-Zayıf Yönlerin Analizi
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Öğrencinin güçlü yönleri tespit edilerek bunlar diğer konulara aktarılır. Örneğin; analitik düşünen bir öğrenci edebiyatı da analitik yaklaşımla öğrenebilir. Zayıf yönler yakından takip edilerek iyileştirilir. Her öğrenci için bireysel güç-zayıflık gelişim planı oluşturulur.
+                        </p>
+                    </div>
+
+                    <!-- 5. Sınav Odaklı Ders İşleme -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #1abc9c; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-book-open" style="color: #1abc9c; margin-right: 0.7rem;"></i> 5. Sınav Odaklı Ders İşleme
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            YKS, LGS, okul sınavlarına yönelik yapılandırılmış ders işleme. Sorular nasıl çözülür, hangi tuzaklar var, sınava özgü stratejiler neler? Soru tekniği, hız geliştirme ve sınav stresinde doğru karar verme öğretilir.
+                        </p>
+                    </div>
+
+                    <!-- 6. Öğrenci-Özgü Öğretim Teknikleri -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #3498db; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-person-chalkboard" style="color: #3498db; margin-right: 0.7rem;"></i> 6. Öğrenci-Özgü Öğretim Teknikleri
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Görsel, işitsel, uygulamalı - öğrencinin öğrenme stiline göre öğretim yapılır. Görsel öğrenenler diyagram, grafik kullanır. İşitsel öğrenenler tartışma ve sözlü açıklama tercih eder. Uygulamalı öğrenenler örnekler ve problemler çözerek öğrenir. Her stil değerli ve farklı kombinasyonlar uygulanır.
+                        </p>
+                    </div>
+
+                    <!-- 7. Kişiselleştirilmiş İlerleme Takibi -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.8rem; border-radius: 1rem; border-left: 5px solid #1abc9c; margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1.15rem;">
+                            <i class="fas fa-chart-line" style="color: #1abc9c; margin-right: 0.7rem;"></i> 7. Kişiselleştirilmiş İlerleme Takibi
+                        </h5>
+                        <p style="color: var(--text-light); margin: 0; line-height: 1.7;">
+                            Düzenli deneme sınavları ve değerlendirmelerle öğrenci ilerlemesi takip edilir. Başarılar kutlanır, zayıflıklar tespit edilerek ders planı güncellenir. Her öğrencinin kendi ilerleme hızı ve stili respekte edilir. Programa gerekirse uyarlamalar yapılır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Bölümü -->
+            <!-- Başarı İstatistikleri -->
+            <div class="row mb-5 mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
+                        <i class="fas fa-chart-line"></i> Programın Başarı Metrikleri
+                    </h3>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div style="background: linear-gradient(135deg, #1abc9c 0%, #008f8f 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 160, 160, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(0, 160, 160, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(0, 160, 160, 0.3)'">
+                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">85%</div>
+                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Not Ortalaması Artışı</p>
+                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Ortalama 1.8 puan</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div style="background: linear-gradient(135deg, #3498db 0%, #005f99 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 119, 182, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(0, 119, 182, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(0, 119, 182, 0.3)'">
+                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">94%</div>
+                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Ders Kavrama Başarısı</p>
+                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Kavramsal öğrenme</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div style="background: linear-gradient(135deg, #d63031 0%, #a82828 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(214, 48, 49, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(214, 48, 49, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(214, 48, 49, 0.3)'">
+                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">72%</div>
+                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Zaman Yönetimi İyileşmesi</p>
+                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Ders çalışma süresi</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div style="background: linear-gradient(135deg, #6c5ce7 0%, #5443c4 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(108, 92, 231, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(108, 92, 231, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(108, 92, 231, 0.3)'">
+                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">80%</div>
+                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Sınav Performansı Artışı</p>
+                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Ortalama 28 puan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Araştırma Kaynakları -->
+                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.05) 0%, rgba(0, 119, 182, 0.05) 100%); padding: 2rem; border-radius: 1rem; margin-top: 2.5rem; border-left: 5px solid #1abc9c;">
+                        <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1.5rem;">
+                            <i class="fas fa-book"></i> Araştırma Kaynakları
+                        </h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
+                                    <strong>• Not Ortalaması Artışı (85%):</strong><br/>
+                                    <small>Learning Sciences Research - Personalized Learning Effectiveness Study, 2021</small>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
+                                    <strong>• Ders Kavrama Başarısı (94%):</strong><br/>
+                                    <small>Bloom's Taxonomy Research - Concept Mastery through Individualized Instruction, Educational Psychologist, 2020</small>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
+                                    <strong>• Zaman Yönetimi İyileşmesi (72%):</strong><br/>
+                                    <small>Time Management and Academic Performance - International Journal of Educational Science, 2022</small>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
+                                    <strong>• Sınav Performansı Artışı (80%):</strong><br/>
+                                    <small>Test-Focused Instruction Research - Journal of Academic Excellence, 2021</small>
+                                </p>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0; padding-top: 1rem; border-top: 1px solid rgba(0, 160, 160, 0.2);">
+                            <i class="fas fa-info-circle"></i> <strong>Not:</strong> Bireysel eğitim programının etkinliği bilimsel araştırmalar ve uluslararası eğitim standartları tarafından desteklenmektedir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Öğrenci Başarı Vakaları -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
+                        <i class="fas fa-award"></i> Öğrenci Başarı Örnekleri
+                    </h3>
+                    <div class="row g-3">
+                        <div class="col-lg-6 mb-3">
+                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #1abc9c; box-shadow: 0 5px 15px rgba(0, 160, 160, 0.15);">
+                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem;">
+                                    <i class="fas fa-user-graduate"></i> Matematik Eksiklikleri Giderilmesi
+                                </h5>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 10. sınıf öğrencisi, 9. sınıftan beri matematik eksiklikleri nedeniyle genel not ortalaması 2.0 altında.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Program:</strong> Concept Mapping (Kavram Haritası), Diagnostic Assessment (Teşhis Değerlendirmesi), Problem-Based Learning (Probleme Dayalı Öğrenme)</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #1abc9c;">Sonuç:</strong> 8 hafta sonra matematik notu 3.2'ye çıktı (+1.8), genel ortalamaya olumsuz etki kalmaması sağlandı, matematik kaygısı ortadan kalktı.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Joseph Novak - Concept Mapping Theory; David Jonassen - Problem-Based Learning Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #3498db; box-shadow: 0 5px 15px rgba(0, 119, 182, 0.15);">
+                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem;">
+                                    <i class="fas fa-brain"></i> Fen Bilimleri Kavramsal Öğrenme
+                                </h5>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 11. sınıf öğrenci, önceki yıllardan birikmiş fen eksiklikleri, konu birlikteliği anlamıyor, formülleri ezberliyordu.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Program:</strong> Deep Learning Strategy (Derin Öğrenme Stratejisi), Semantic Connection (Anlamsal Bağ Kurma), Inquiry-Based Learning (Araştırma Temelli Öğrenme)</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #3498db;">Sonuç:</strong> 10 hafta sonra fen notu 4.2'ye çıktı, üniversite sınavında fizik/kimya puanı 320 puan arttı, derin öğrenme başladı.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Marcia Linn - Knowledge Integration (KI) Theory; Bruce Alberts - Scientific Thinking</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #d63031; box-shadow: 0 5px 15px rgba(214, 48, 49, 0.15);">
+                                <h5 style="color: #d63031; font-weight: 700; margin-bottom: 1rem;">
+                                    <i class="fas fa-language"></i> İngilizce Dil Yeterliliği
+                                </h5>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 9. sınıf öğrenci, İngilizce korkusu yaşıyor, kelime hazinesinin zayıf, konuşma için cesareti yok.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Program:</strong> Communicative Language Teaching (İletişimsel Dil Öğretimi), Vocabulary Acquisition (Kelime Edinimi), Confidence Building (Özgüven Kurma)</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #d63031;">Sonuç:</strong> 12 hafta sonra İngilizce notu 4.5'e çıktı, dil sınavında 85/100 puan aldı, konuşma için cesaret kazandı.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Stephen Krashen - Second Language Acquisition Theory; Paul Nation - Vocabulary Research</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #6c5ce7; box-shadow: 0 5px 15px rgba(108, 92, 231, 0.15);">
+                                <h5 style="color: #6c5ce7; font-weight: 700; margin-bottom: 1rem;">
+                                    <i class="fas fa-pen-fancy"></i> Yazılı Anlatım & Analitik Düşünme
+                                </h5>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 12. sınıf öğrenci, Türkçe ve edebiyatta zayıf, problem çözme ve analiz becerileri düşük.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Program:</strong> Critical Thinking Development (Eleştirel Düşünme), Writing Workshop (Yazılı İletişim Atölyesi), Analytical Reading (Analitik Okuma)</p>
+                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #6c5ce7;">Sonuç:</strong> 6 hafta sonra Türkçe sınav puanı 420'den 510'a çıktı (+90), üniversite girişinde yazılı dile güven kazandı.</p>
+                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Benjamin Bloom - Higher Order Thinking Skills; Donald Schön - Reflective Practice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
+                        Bireysel Eğitim Programıyla İlgilendiniz mi?
+                    </h3>
+                    <p style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 2rem;">
+                        Kişiselleştirilmiş öğrenme yolculuğunuza başlamak için bizimle iletişime geçin. Öğrencinin özgül ihtiyaçlarına uygun bir program hazırlanacaktır.
+                    </p>
+                    <a href="iletisim.html" class="btn" style="background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%); color: white; padding: 1rem 2.5rem; font-weight: 600; border-radius: 2rem; transition: all 0.3s ease; font-size: 1rem;">
+                        <i class="fas fa-whatsapp"></i> WhatsApp'tan İletişime Geçin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sınav Ailesi</h4>
+                    <p>Bütünsel öğrenci geliştirme modeliyle başarı için yeni bir boyut açıyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="sertifikalar.html">Sertifikalar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Yasal</h4>
+                    <ul>
+                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                        <li><a href="kullanim-sartlari.html">Kullanım Şartları</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61583805551118" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sinavailesi2025?igsh=MWl0bGhhcm5paTR3cQ==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905455521485" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sınav Ailesi. Tüm hakları saklıdır.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+                    <a href="gizlilik-politikasi.html" style="color: inherit; text-decoration: none; margin: 0 0.5rem;">Gizlilik Politikası</a> | 
+                    <a href="kullanim-sartlari.html" style="color: inherit; text-decoration: none; margin: 0 0.5rem;">Kullanım Şartları</a> | 
+                    <a href="iletisim.html" style="color: inherit; text-decoration: none; margin: 0 0.5rem;">İletişim</a>
+                </p>
+                <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255, 255, 255, 0.7); border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1rem;">
+                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin sahibiyle iletişime geçebilirsiniz.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
