@@ -32,18 +32,7 @@
             margin-top: auto;
         }
 
-        /* Navbar Responsive */
-        /*
-            NOTE: avoid forcing .navbar-collapse display via !important rules here.
-            Bootstrap toggles the `.show` class on the collapse element to open/close the
-            mobile menu; using `display: none !important` prevents that. Keep the
-            toggler visible on smaller screens but let Bootstrap handle the collapse.
-        */
-        @media (max-width: 1024px) {
-            .navbar-toggler {
-                display: block !important;
-            }
-        }
+        /* Navbar Responsive - use Bootstrap's built-in behavior (no forced overrides) */
         
         /* 1024px'te floating kartları yatay göster */
         @media (max-width: 1024px) {
@@ -617,7 +606,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="images/logo.jpg" alt="Sınav Ailesi" style="height: 45px; margin-right: 0.75rem; border-radius: 50%;">
