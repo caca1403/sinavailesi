@@ -925,7 +925,10 @@
                                 </div>
                                 <h3 id="notificationTitle" class="notification-title">Başarılı!</h3>
                                 <p id="notificationMessage" class="notification-message">Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.</p>
-                                <button onclick="closeNotification()" class="notification-button">Tamam</button>
+                                <div style="display:flex; gap:0.6rem; justify-content:center; align-items:center; margin-top:1rem;">
+                                    <button id="notificationAction" style="display:none;" class="notification-button notification-action">Gruba Katıl</button>
+                                    <button onclick="closeNotification()" class="notification-button">Tamam</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1154,12 +1157,14 @@
             }
         }
 
-        // Notification göster
-        function showNotification(title, message, isSuccess = true) {
+        // Notification göster (opsiyonel aksiyon butonu ile)
+        // actionLabel ve actionUrl verildiğinde bildirimde bir aksiyon butonu gösterilir
+        function showNotification(title, message, isSuccess = true, actionLabel = null, actionUrl = null) {
             const overlay = document.getElementById('notificationOverlay');
             const icon = document.getElementById('notificationIcon');
             const titleEl = document.getElementById('notificationTitle');
             const messageEl = document.getElementById('notificationMessage');
+            const actionBtn = document.getElementById('notificationAction');
 
             titleEl.textContent = title;
             messageEl.textContent = message;
@@ -1172,12 +1177,24 @@
                 icon.innerHTML = '<i class="fas fa-times"></i>';
             }
 
+            // Aksiyon butonunu ayarla
+            if (actionLabel && actionUrl && actionBtn) {
+                actionBtn.textContent = actionLabel;
+                actionBtn.style.display = 'inline-block';
+                actionBtn.onclick = function() {
+                    window.open(actionUrl, '_blank');
+                };
+            } else if (actionBtn) {
+                actionBtn.style.display = 'none';
+                actionBtn.onclick = null;
+            }
+
             overlay.style.display = 'flex';
 
-            // 4 saniye sonra otomatik kapat
+            // 10 saniye sonra otomatik kapat (aksi halde kullanıcı beslensin)
             setTimeout(() => {
                 closeNotification();
-            }, 4000);
+            }, 10000);
         }
 
         // Notification kapat
@@ -1595,8 +1612,8 @@ _Bu mesaj iletişim formu aracılığıyla otomatik olarak gönderilmiştir._`;
             // Grup davet linki (kullanıcıyı gruba katılmaya yönlendirecek)
             const WHATSAPP_GROUP_INVITE = 'https://chat.whatsapp.com/FihnCyAZq12IPU9pJHUtpt?mode=wwt';
 
-            // Notification göster
-            showNotification('Başarılı!', 'Mesajınız WhatsApp\'ta gönderilmek üzere hazırlanıyor. Birkaç saniye sonra grup daveti de açılacaktır.', true);
+            // Notification göster (aksi halde kullanıcı butona tıklayarak grup davetini alabilir)
+            showNotification('Başarılı!', 'Mesajınız WhatsApp\'ta gönderilmek üzere hazırlanıyor. Birkaç saniye sonra grup daveti de açılacaktır. Eğer otomatik açılmazsa lütfen "Gruba Katıl" butonuna tıklayın.', true, 'Gruba Katıl', WHATSAPP_GROUP_INVITE);
 
             // Bir kullanıcı etkileşimiyle (tek tıklama) iki bağlantıyı da tetiklemeye çalışıyoruz.
             // Bunun amacı: önce ilgili kişiye (wa.me) ön-doldurulmuş mesaj açmak, aynı anda kullanıcının
@@ -1636,7 +1653,7 @@ _Bu mesaj iletişim formu aracılığıyla otomatik olarak gönderilmiştir._`;
                 // Fallback: önce wa.me'yi açmaya çalış
                 try { window.open(whatsappURL, '_blank'); } catch (err) { console.warn(err); }
                 // Ve kullanıcıya grup linkini gösterecek bir bildirim bırak
-                showNotification('Grup Daveti', 'Grup daveti otomatik açılamadıysa lütfen buraya tıklayın: Grup Daveti', false);
+                showNotification('Grup Daveti', 'Grup daveti otomatik açılamadıysa lütfen "Gruba Katıl" butonuna tıklayın.', false, 'Gruba Katıl', WHATSAPP_GROUP_INVITE);
             }
 
             // Form temizle ve step 1'e dön (kısa süre sonra)
