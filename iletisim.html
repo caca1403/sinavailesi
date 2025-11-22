@@ -1015,7 +1015,7 @@
             <div class="footer-bottom">
                 <p>&copy; 2024 Sınav Ailesi. Tüm hakları saklıdır.</p>
                 <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255, 255, 255, 0.7); border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1rem;">
-                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin kurucusuyla iletişime geçebilirsiniz.
+                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin sahibiyle iletişime geçebilirsiniz.
                 </p>
             </div>
         </div>
@@ -1365,6 +1365,32 @@
             }
         });
 
+        // Eğer kullanıcı WhatsApp/Grup yönlendirmesinden döndüğünde sayfaya geri gelirse,
+        // localStorage'daki form verilerini tekrar yükle (örn. sekme odağı geri gelince)
+        window.addEventListener('focus', function onFocusLoad() {
+            const saved = localStorage.getItem('contactFormData');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    if (data.name) document.getElementById('name').value = data.name;
+                    if (data.email) document.getElementById('email').value = data.email;
+                    if (data.country) document.getElementById('country').value = data.country;
+                    if (data.phone) document.getElementById('phone').value = data.phone;
+                    if (data.subject) document.getElementById('subject').value = data.subject;
+                    if (data.message) document.getElementById('message').value = data.message;
+
+                    updatePhonePlaceholder();
+                    updateFlagBackground();
+                    console.log('Form verileri odak (focus) ile yüklendi:', data);
+
+                    // Yüklendikten sonra localStorage'ı temizle
+                    localStorage.removeItem('contactFormData');
+                } catch (e) {
+                    console.log('localStorage verisi yüklenemedi (focus):', e);
+                }
+            }
+        }, { once: true });
+
         // Ad Soyad Validasyonu - Visual Feedback ile
         function validateName(name) {
             const trimmed = name.trim();
@@ -1566,27 +1592,65 @@ _Bu mesaj iletişim formu aracılığıyla otomatik olarak gönderilmiştir._`;
             
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-            
+            // Grup davet linki (kullanıcıyı gruba katılmaya yönlendirecek)
+            const WHATSAPP_GROUP_INVITE = 'https://chat.whatsapp.com/FihnCyAZq12IPU9pJHUtpt?mode=wwt';
+
             // Notification göster
-            showNotification('Başarılı!', 'Mesajınız WhatsApp\'ta gönderilmek üzere hazırlanıyor. En kısa sürede sizinle iletişime geçeceğiz.', true);
-            
-            // 1.5 saniye sonra WhatsApp'ı aç
-            setTimeout(() => {
-                window.open(whatsappURL, '_blank');
-            }, 1500);
-            
-            // Form temizle ve step 1'e dön
+            showNotification('Başarılı!', 'Mesajınız WhatsApp\'ta gönderilmek üzere hazırlanıyor. Birkaç saniye sonra grup daveti de açılacaktır.', true);
+
+            // Bir kullanıcı etkileşimiyle (tek tıklama) iki bağlantıyı da tetiklemeye çalışıyoruz.
+            // Bunun amacı: önce ilgili kişiye (wa.me) ön-doldurulmuş mesaj açmak, aynı anda kullanıcının
+            // WhatsApp içinde gruba katılmasını sağlayacak davet ekranını da getirmektir.
+            // Tarayıcılar setTimeout ile açılan pencereleri engelleyebilir; bu yüzden iki <a> elementi
+            // oluşturarak aynı kullanıcı etkileşimi bağlamında click() çağrısı yapıyoruz.
+            try {
+                console.log('sendViaWhatsApp: linkleri eşzamanlı tetikleniyor ->', whatsappURL, WHATSAPP_GROUP_INVITE);
+
+                const a1 = document.createElement('a');
+                a1.href = whatsappURL;
+                a1.target = '_blank';
+                a1.rel = 'noopener noreferrer';
+
+                const a2 = document.createElement('a');
+                a2.href = WHATSAPP_GROUP_INVITE;
+                a2.target = '_blank';
+                a2.rel = 'noopener noreferrer';
+
+                // Gizli olarak DOM'a ekle ve tıklat
+                a1.style.display = 'none';
+                a2.style.display = 'none';
+                document.body.appendChild(a1);
+                document.body.appendChild(a2);
+
+                // Sırasıyla tıkla (aynı kullanıcı etkileşimi içinde kaldığından popup bloklayıcı daha az müdahale eder)
+                a1.click();
+                a2.click();
+
+                // Temizlik
+                setTimeout(() => {
+                    if (a1.parentNode) a1.parentNode.removeChild(a1);
+                    if (a2.parentNode) a2.parentNode.removeChild(a2);
+                }, 1000);
+            } catch (e) {
+                console.warn('sendViaWhatsApp: eşzamanlı link tetikleme hatası:', e);
+                // Fallback: önce wa.me'yi açmaya çalış
+                try { window.open(whatsappURL, '_blank'); } catch (err) { console.warn(err); }
+                // Ve kullanıcıya grup linkini gösterecek bir bildirim bırak
+                showNotification('Grup Daveti', 'Grup daveti otomatik açılamadıysa lütfen buraya tıklayın: Grup Daveti', false);
+            }
+
+            // Form temizle ve step 1'e dön (kısa süre sonra)
             setTimeout(() => {
                 document.getElementById('contactForm').reset();
                 updatePhonePlaceholder();
                 currentStep = 1;
                 showStep(currentStep);
-            }, 2000);
+            }, 1500);
 
-            // localStorage'ı temizle - 10 saniye sonra (kullanıcı geri dönüp yeniden form doldurabilsin)
+            // localStorage'ı temizle - 20 saniye sonra (kullanıcı geri dönüp yeniden form doldurabilsin)
             setTimeout(() => {
                 localStorage.removeItem('contactFormData');
-            }, 10000);
+            }, 20000);
         }
 
         function sendViaEmail() {
@@ -1692,4 +1756,3 @@ ${message}`;
     </script>
 </body>
 </html>
-
