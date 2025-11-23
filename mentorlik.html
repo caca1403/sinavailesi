@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sınav Ailesi - Mentörlük. Zaman yönetimi, verimlilik ve derin çalışma teknikleri.">
-    <title>Mentörlük | Sınav Ailesi</title>
+    <meta name="description" content="Sınav Ailesi - Medya. Fotoğraf galerisi ve haberler.">
+    <meta name="keywords" content="medya, galeri, haberler, fotoğraf">
+    <meta name="author" content="Sınav Ailesi">
+    <title>Medya | Sınav Ailesi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -21,367 +23,170 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-graduation-cap"></i> Uzmanlıkların Kapsamı
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="psikoloji.html"><i class="fas fa-brain"></i> Psikolojik Destek</a></li>
-                            <li><a class="dropdown-item" href="uyku-beslenme.html"><i class="fas fa-utensils"></i> Uyku & Beslenme</a></li>
-                            <li><a class="dropdown-item active" href="mentorlik.html"><i class="fas fa-handshake"></i> Mentörlük Programı</a></li>
+                            <li><a class="dropdown-item" href="saglik.html"><i class="fas fa-heartbeat"></i> Sağlık</a></li>
+                            <li><a class="dropdown-item" href="mentorlik.html"><i class="fas fa-handshake"></i> Mentörlük Programı</a></li>
+                            <li><a class="dropdown-item" href="ozelders.html"><i class="fas fa-book-open"></i> Özel Ders</a></li>
                             <li><a class="dropdown-item" href="egitim.html"><i class="fas fa-book"></i> Bireysel Eğitim</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="ailedanismanligi.html"><i class="fas fa-users"></i> Aile Danışmanlığı</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link active" href="medya.html">Medya</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sertifikalar.html">Sertifikalar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="min-height: 50vh; padding: 3rem 2rem;">
-        <div class="container">
+    <section class="hero-section" style="min-height: 60vh; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(0, 160, 160, 0.15) 0%, rgba(0, 119, 182, 0.15) 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0, 160, 160, 0.2), transparent); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -80px; right: -80px; width: 350px; height: 350px; background: radial-gradient(circle, rgba(0, 119, 182, 0.2), transparent); border-radius: 50%;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
             <div class="hero-content" style="text-align: center;">
-                <h1 class="hero-title">Mentörlük Programı</h1>
-                <div class="hero-question" style="margin-top: 1rem;">
-                    <h2>Zaman Yönetimi ve Verimlilik Stratejileri</h2>
+                <div style="display: inline-block; padding: 0.8rem 2rem; background: rgba(0, 160, 160, 0.15); border: 2px solid #1abc9c; border-radius: 50px; color: #1abc9c; font-weight: 700; font-size: 0.95rem; margin-bottom: 2rem; letter-spacing: 0.5px;">
+                    📸 MEDYA VE HABERLER
                 </div>
+                <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; margin-bottom: 1rem;">Medya & Galeri</h1>
+                <div class="hero-question" style="margin-top: 1.5rem;">
+                    <h2 style="color: #1abc9c; font-weight: 700; font-size: clamp(1.3rem, 4vw, 2rem);">Sınav Ailesi'nden Haberler ve Etkinlikler</h2>
+                </div>
+                <p style="font-size: 1.15rem; margin-top: 2rem; color: #555; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                    Sınav Ailesi'nin gerçekleştirdiği etkinlikler, öğrenci başarı hikayeleri ve güncel haberler.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- Media Content -->
     <section class="about-section">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="section-title" style="text-align: center;">Mentörlük Neden Hayati?</h2>
-                    <p style="text-align: justify; color: var(--text-light); line-height: 1.8;">
-                        Günümüzde dikkat dağınıklığı, akademik başarısızlığın ana sebebidir. Sosyal medya, bildirimler ve çevresel faktörler öğrencilerin derin çalışma yapmasını engeller. Sınav Ailesi'nin mentörlük modülü, bilimsel mentörlük teknikleri, zaman yönetimi stratejileri ve motivasyon kılavuzluğu sağlayarak öğrencilerin tam potansiyellerini açığa çıkarmalarını sağlar.
-                    </p>
-                </div>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span style="display: inline-block; padding: 0.6rem 1.5rem; background: rgba(0, 160, 160, 0.1); border: 1.5px solid #1abc9c; border-radius: 2rem; color: #1abc9c; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">
+                    🖼️ FOTOĞRAF GALERİSİ
+                </span>
+                <h2 class="section-title" style="margin-top: 1.5rem;">Sınav Ailesi Etkinlikleri</h2>
+                <p style="font-size: 1.1rem; color: #666; margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Gerçekleştirdiğimiz etkinliklere ve programlara ait fotoğraflar
+                </p>
             </div>
-
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-check-circle"></i> Program Kapsamı
-                    </h3>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #1abc9c;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-clock" style="color: #1abc9c; margin-right: 0.5rem;"></i> Pomodoro Tekniği
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">
-                                    25 dakika yoğun çalışma + 5 dakika mola sistematiği
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #3498db;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-calendar-alt" style="color: #3498db; margin-right: 0.5rem;"></i> Time-Blocking
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">
-                                    Günü en verimli saatlere göre planlama
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #1abc9c;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-ban" style="color: #1abc9c; margin-right: 0.5rem;"></i> Dikkat Dağınıklığı Önleme
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">
-                                    Telefon, sosyal medya ve çevre yönetimi
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #3498db;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-brain" style="color: #3498db; margin-right: 0.5rem;"></i> Derin Çalışma
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">
-                                    Maksimum konsantrasyon ve verimlilik durumu
-                                </p>
-                            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #1abc9c 0%, #008f8f 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(0, 160, 160, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(0, 160, 160, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(0, 160, 160, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 1</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Öğrenci Başarısı</small>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-lightbulb"></i> Mentörlük Stratejileri
-                    </h3>
-                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 2rem; border-radius: 1.2rem; border-left: 5px solid #1abc9c;">
-                        <ul style="color: var(--text-light); line-height: 2;">
-                            <li><strong style="color: var(--text-dark);">Fokus Ortamı Kurma:</strong> Gürültüsüz, rahat, ergonomik çalışma alanı</li>
-                            <li><strong style="color: var(--text-dark);">Ekran Yönetimi:</strong> Çift monitör sistemi, tek sekmeli tarayıcı</li>
-                            <li><strong style="color: var(--text-dark);">Bildirim Kontrolü:</strong> Tüm bildirimleri kapatma, sessiz mod aktivasyon</li>
-                            <li><strong style="color: var(--text-dark);">Ruh Hali Takibi:</strong> Enerji seviyesine göre sınıflandırma</li>
-                            <li><strong style="color: var(--text-dark);">Momentum Oluşturma:</strong> Ilk 5 dakika en kolay parçayla başlama</li>
-                        </ul>
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #3498db 0%, #004d8c 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(0, 119, 182, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(0, 119, 182, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(0, 119, 182, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 2</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Seminer Serileri</small>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-tasks"></i> Zaman Yönetimi Araçları
-                    </h3>
-                    <div class="row">
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.08) 0%, rgba(0, 119, 182, 0.04) 100%); padding: 2rem; border-radius: 1.2rem; border-left: 5px solid #3498db;">
-                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-calendar-alt"></i> Eisenhower Matrix
-                                </h5>
-                                <div style="background: white; padding: 1.5rem; border-radius: 0.8rem; margin-bottom: 1rem;">
-                                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
-                                        <tr>
-                                            <td style="border: 1px solid #ddd; padding: 0.8rem; background: #ffecec;"><strong>Acil & Önemli</strong><br/>(Hemen yap)</td>
-                                            <td style="border: 1px solid #ddd; padding: 0.8rem; background: #e8f4f8;"><strong>Acil & Önemsiz</strong><br/>(Ertele)</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #ddd; padding: 0.8rem; background: #f0f8ff;"><strong>Önemli & Acil Değil</strong><br/>(Planla)</td>
-                                            <td style="border: 1px solid #ddd; padding: 0.8rem; background: #f5f5f5;"><strong>Önemsiz & Acil Değil</strong><br/>(Kaldır)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #d63031 0%, #a82828 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(214, 48, 49, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(214, 48, 49, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(214, 48, 49, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 3</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Grup Danışmanlığı</small>
                         </div>
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.08) 0%, rgba(0, 160, 160, 0.04) 100%); padding: 2rem; border-radius: 1.2rem; border-left: 5px solid #1abc9c;">
-                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-check-circle"></i> Haftalık İş Akışı
-                                </h5>
-                                <ul style="color: var(--text-light); margin: 0; padding-left: 1.5rem; line-height: 2;">
-                                    <li><strong style="color: var(--text-dark);">Pazartesi:</strong> Haftalık planlama (30 dk)</li>
-                                    <li><strong style="color: var(--text-dark);">Salı-Perşembe:</strong> Planlı çalışma</li>
-                                    <li><strong style="color: var(--text-dark);">Cuma:</strong> Haftalık İnceleme (20 dk)</li>
-                                    <li><strong style="color: var(--text-dark);">Cumartesi-Pazar:</strong> Esneklik ve dinlenme</li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #6c5ce7 0%, #5443c4 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(108, 92, 231, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(108, 92, 231, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(108, 92, 231, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 4</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Motivasyon Atölye</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #1abc9c 0%, #008f8f 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(0, 160, 160, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(0, 160, 160, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(0, 160, 160, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 5</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Aile Buluşması</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="background: linear-gradient(135deg, #3498db 0%, #004d8c 100%); border-radius: 1.5rem; height: 280px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 12px 35px rgba(0, 119, 182, 0.25); position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.08) translateY(-8px)'; this.style.boxShadow='0 20px 50px rgba(0, 119, 182, 0.35)'" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.boxShadow='0 12px 35px rgba(0, 119, 182, 0.25)'">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent); opacity: 0;"></div>
+                        <div style="text-align: center; color: white; position: relative; z-index: 2;">
+                            <i class="fas fa-image" style="font-size: 3.5rem; margin-bottom: 1.5rem; display: block; opacity: 0.95;"></i>
+                            <p style="font-weight: 700; font-size: 1.2rem; margin: 0;">Etkinlik 6</p>
+                            <small style="opacity: 0.85; margin-top: 0.5rem; display: block;">Çalışma Atölyesi</small>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-chart-line"></i> Mentörlük Programının Faydaları
-                    </h3>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.8rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 160, 160, 0.12); border-left: 5px solid #1abc9c; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 160, 160, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 160, 160, 0.12)'">
-                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-tachometer-alt"></i> %30-40 Verimlilik Artışı
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Pomodoro ve Time-Blocking teknikleri ile derslere ayrılan süre %30-40 daha verimli hale gelir.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.8rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 119, 182, 0.12); border-left: 5px solid #3498db; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 119, 182, 0.12)'">
-                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-smile"></i> Motivasyon ve Özgüven
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Etkili çalışma sistemleri, öğrenciye kontrol hissi ve başarı deneyimleri sağlar.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.8rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 160, 160, 0.12); border-left: 5px solid #1abc9c; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 160, 160, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 160, 160, 0.12)'">
-                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-brain"></i> Derin Öğrenme
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Konsantre çalışma saatleri, kalıcı hafıza oluşumu ve derinlemesine anlayış sağlar.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.8rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 119, 182, 0.12); border-left: 5px solid #3498db; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 119, 182, 0.12)'">
-                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-clock"></i> Zaman Tasarrufu
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Daha az çalışma süresi ile daha iyi sonuçlar elde edilerek vakit kazanılır.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mentörlük Programı Verimlilik Sonuçları -->
-            <div class="row mb-5 mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-line-chart"></i> Verimlilik ve Başarı Metrikleri
-                    </h3>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-lg-3">
-                            <div style="background: linear-gradient(135deg, #1abc9c 0%, #008f8f 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 160, 160, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(0, 160, 160, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(0, 160, 160, 0.3)'">
-                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">%35</div>
-                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Ders Çalışma Verimliliği Artışı</p>
-                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">İlk 3 ay içinde</small>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div style="background: linear-gradient(135deg, #3498db 0%, #005f99 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(0, 119, 182, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(0, 119, 182, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(0, 119, 182, 0.3)'">
-                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">88%</div>
-                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Hedef Belirleme Başarısı</p>
-                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Hedef tamamlama oranı</small>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div style="background: linear-gradient(135deg, #d63031 0%, #a82828 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(214, 48, 49, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(214, 48, 49, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(214, 48, 49, 0.3)'">
-                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">79%</div>
-                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Öz-Disiplin Geliştirme</p>
-                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Bağımsız çalışma</small>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div style="background: linear-gradient(135deg, #6c5ce7 0%, #5443c4 100%); color: white; padding: 2.5rem 1.5rem; border-radius: 1.5rem; text-align: center; box-shadow: 0 15px 40px rgba(108, 92, 231, 0.3); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(108, 92, 231, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 40px rgba(108, 92, 231, 0.3)'">
-                                <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">91%</div>
-                                <p style="font-weight: 600; margin: 0; font-size: 0.95rem;">Öğrenci Memnuniyeti</p>
-                                <small style="opacity: 0.9; display: block; margin-top: 0.5rem;">Program değerlendirmesi</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Araştırma Kaynakları -->
-                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.05) 0%, rgba(0, 119, 182, 0.05) 100%); padding: 2rem; border-radius: 1rem; margin-top: 2.5rem; border-left: 5px solid #1abc9c;">
-                        <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1.5rem;">
-                            <i class="fas fa-book"></i> Araştırma Kaynakları
-                        </h5>
-                        <div class="row">
-                            <div class="col-md-6 mb-2">
-                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
-                                    <strong>• Ders Çalışma Verimliliği (35%):</strong><br/>
-                                    <small>Pomodoro Technique Effectiveness - Procrastination Research Center, University of Colorado, 2022</small>
-                                </p>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
-                                    <strong>• Hedef Belirleme Başarısı (88%):</strong><br/>
-                                    <small>SMART Goals Research - Goal Setting and Task Performance meta-analysis, 2021</small>
-                                </p>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
-                                    <strong>• Öz-Disiplin Geliştirme (79%):</strong><br/>
-                                    <small>Self-Control and Academic Achievement - Psychological Science, 2020</small>
-                                </p>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <p style="color: var(--text-light); margin-bottom: 0.5rem; line-height: 1.6;">
-                                    <strong>• Öğrenci Memnuniyeti (91%):</strong><br/>
-                                    <small>Mentoring Effectiveness - Journal of Educational Psychology, 2021</small>
-                                </p>
-                            </div>
-                        </div>
-                        <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0; padding-top: 1rem; border-top: 1px solid rgba(0, 160, 160, 0.2);">
-                            <i class="fas fa-info-circle"></i> <strong>Not:</strong> Mentörlük programının sonuçları zaman yönetimi ve kişisel gelişim alanındaki bilimsel araştırmalarla desteklenmektedir.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mentörlük Teorik Temelleri -->
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-graduation-cap"></i> Mentörlüğün Bilimsel Temelleri
-                    </h3>
-                    <div class="row g-3" style="margin-bottom: 2rem;">
-                        <div class="col-md-6">
-                            <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.1), rgba(0, 119, 182, 0.1)); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #1abc9c;">
-                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 0.8rem;">
-                                    <i class="fas fa-bullseye"></i> Hedef Belirleme Teorisi
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem; line-height: 1.6;">
-                                    Edwin Locke ve Gary Latham tarafından geliştirilen araştırmalar, spesifik ve zorlayıcı hedeflerin performansı artırdığını göstermektedir. Mentörlük sürecinde açık hedefler belirlemek, öğrencilerin motivasyonunu ve başarısını önemli ölçüde yükseltir.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div style="background: linear-gradient(135deg, rgba(212, 63, 49, 0.1), rgba(108, 92, 231, 0.1)); padding: 1.5rem; border-radius: 1rem; border-left: 4px solid #d63031;">
-                                <h5 style="color: #d63031; font-weight: 700; margin-bottom: 0.8rem;">
-                                    <i class="fas fa-brain"></i> Davranış Tasarımı ve Alışkanlık
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem; line-height: 1.6;">
-                                    B.J. Fogg tarafından araştırılan davranış tasarımı, küçük, tekrarlanan eylemler aracılığıyla yeni alışkanlıkların oluşturulması ilkesine dayanır. Mentör rehberliğinde, çalışma alışkanlıkları ve disiplin sistematik şekilde geliştirilir.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Öğrenci Başarı Vakaları -->
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <h3 style="color: #3498db; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        <i class="fas fa-star"></i> Mentörlük Programı Başarı Örnekleri
-                    </h3>
-                    <div class="row g-3">
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #1abc9c; box-shadow: 0 5px 15px rgba(0, 160, 160, 0.15);">
-                                <h5 style="color: #1abc9c; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-user-tie"></i> Örnek 1: Sorumluluk ve Öz-Disiplin Gelişimi
-                                </h5>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 10. sınıf öğrenci, çok uyuşuk, mentorlük yardımı almadan ders çalışmayı planlayamıyor, zaman yönetimi zayıf.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Mentörlük Süreci:</strong> Daily Planning Systems (Günlük Planlama), Goal Setting & Sub-goal Decomposition (Hedef Belirleme), Progress Tracking (İlerleme Takibi)</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #1abc9c;">Sonuç:</strong> 10 hafta sonra bağımsız planlama yapabilir hale geldi; %79 öz-disiplin kazandı; ders çalışma süresini %40 artırdı; akademik performans 2.1 → 3.5 çıktı.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Edwin Locke & Gary Latham - Goal-Setting Theory; B.J. Fogg - Behavior Design</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #3498db; box-shadow: 0 5px 15px rgba(0, 119, 182, 0.15);">
-                                <h5 style="color: #3498db; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-graduation-cap"></i> Örnek 2: Sınav Hazırlığı Stratejisi
-                                </h5>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 12. sınıf öğrenci, üniversite sınavına 6 ay kaldı, hangi konuyu nereden başlayacağını bilmiyor, kaygılı.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Mentörlük Süreci:</strong> Exam-Focused Planning (Sınav Odaklı Planlama), Eisenhower Matrix Application, Milestone Tracking (Dönüm Noktası Takibi)</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #3498db;">Sonuç:</strong> 26 hafta sonra sistematik çalışma tamamlandı; üniversite sınavında 420 puan aldı (hedef 400); mentörlük öz-yeterliliği %88'e çıktı.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Stephen Covey - Time Management Matrix; Albert Bandura - Self-Efficacy Theory</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #d63031; box-shadow: 0 5px 15px rgba(214, 48, 49, 0.15);">
-                                <h5 style="color: #d63031; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-tasks"></i> Örnek 3: Çoklu Proje Yönetimi
-                                </h5>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 11. sınıf öğrenci, sanat etkinliklerine katılıyor, ek dersler alıyor, zaman yönetimine güç yetiştiremiyordu.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Mentörlük Süreci:</strong> Prioritization Techniques (Öncelik Belirleme), Time-Blocking Method (Zaman Bloklama), Context Switching Management</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #d63031;">Sonuç:</strong> 8 hafta sonra tüm yükümlülükleri başarıyla yerine getiriyor; ders çalışma verimliği %35 arttı; öğrenci başarısı stabil kaldı, sanat aktiviteleri de devam etti.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> David Allen - Getting Things Done (GTD); Cal Newport - Deep Work</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3">
-                            <div style="background: white; padding: 2rem; border-radius: 1rem; border-left: 6px solid #6c5ce7; box-shadow: 0 5px 15px rgba(108, 92, 231, 0.15);">
-                                <h5 style="color: #6c5ce7; font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-lightbulb"></i> Örnek 4: Derin Öğrenme Stratejisi Geliştirme
-                                </h5>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Durum:</strong> 9. sınıf öğrenci, sadece ezber yoluyla çalışıyor, kavramsal anlayış zayıf, formülleri unutabiliyor.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong>Mentörlük Süreci:</strong> Deep Learning Techniques (Derin Öğrenme), Metacognition Development (Bilişötesi Düşünme), Knowledge Application (Bilgi Uygulaması)</p>
-                                <p style="color: var(--text-light); margin-bottom: 0.8rem; line-height: 1.7;"><strong style="color: #6c5ce7;">Sonuç:</strong> 12 hafta sonra kavramsal anlayışta %67 artış; sınav başarısı %42 yükseldi; ezber yerine anlama temelli çalışmaya başladı; öğrenci memnuniyeti %91'e çıktı.</p>
-                                <p style="color: var(--text-light); margin-bottom: 0; font-size: 0.85rem; border-top: 1px solid #e0e0e0; padding-top: 0.8rem;"><strong>Kaynak:</strong> Marton & Säljö - Deep vs Surface Learning; John Dunlosky - Metacognitive Learning</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div style="text-align: center; margin: 4rem 0;">
+                <span style="display: inline-block; padding: 0.6rem 1.5rem; background: rgba(0, 160, 160, 0.1); border: 1.5px solid #1abc9c; border-radius: 2rem; color: #1abc9c; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">
+                    📰 SON HABERLER
+                </span>
+                <h2 class="section-title" style="margin-top: 1.5rem; margin-bottom: 0;">Güncel Bilgiler</h2>
             </div>
 
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <h3 style="color: #1abc9c; font-weight: 700; margin-bottom: 2rem; font-size: 1.5rem;">
-                        Mentörlük Programıyla İlgilendiniz mi?
-                    </h3>
-                    <a href="iletisim.html" class="btn" style="background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%); color: white; padding: 1rem 2.5rem; font-weight: 600; border-radius: 2rem; transition: all 0.3s ease;">
-                        <i class="fas fa-whatsapp"></i> WhatsApp'tan İletişime Geçin
-                    </a>
+                <div class="col-lg-8 mx-auto">
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 160, 160, 0.12); margin-bottom: 2.5rem; border-left: 6px solid #1abc9c; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 160, 160, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 160, 160, 0.12)'">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #1abc9c, #3498db, #d63031); opacity: 0;"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                            <h4 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.2rem; max-width: 80%;">
+                                <i class="fas fa-rocket" style="color: #1abc9c; margin-right: 0.8rem;"></i>Sınav Ailesi Kuruluşu: 2023 - Empaz ve Özel Z Kuşağı İş Birliği
+                            </h4>
+                            <span style="color: #999; font-size: 0.85rem; background: rgba(0, 160, 160, 0.1); padding: 0.4rem 0.8rem; border-radius: 20px; font-weight: 600;">2023</span>
+                        </div>
+                        <p style="color: var(--text-light); line-height: 1.8; margin: 0; font-size: 0.95rem;">
+                            Sınav Ailesi projesi, Empaz Aile Danışmanı Emine Demir ve Özel Z Kuşağı Akademisi'nin iş birliğiyle resmi olarak kurulmuştur. Psikolojik destek ve bireysel eğitim desteğiyle öğrencilerin bütünsel gelişimine odaklanan kapsamlı bir model ortaya konulmuştur.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 119, 182, 0.12); margin-bottom: 2.5rem; border-left: 6px solid #3498db; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 119, 182, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.12)'">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                            <h4 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.2rem; max-width: 80%;">
+                                <i class="fas fa-expand-alt" style="color: #3498db; margin-right: 0.8rem;"></i>Sınav Ailesi Genişleme: 2025 - Bütünsel Model Tamamlandı
+                            </h4>
+                            <span style="color: #999; font-size: 0.85rem; background: rgba(0, 119, 182, 0.1); padding: 0.4rem 0.8rem; border-radius: 20px; font-weight: 600;">2025</span>
+                        </div>
+                        <p style="color: var(--text-light); line-height: 1.8; margin: 0; font-size: 0.95rem;">
+                            Sınav Ailesi'ne Uzm. Dr. Bülent Herek (Aile Hekimi) ve Fokus Hoca Murat Altunkaya (Odaklanma ve Verimlilik Koçu) eklenmiştir. Bu genişleme, psikolojik destek, bireysel eğitim, sağlık optimizasyonu ve mentörlük alanlarında bütünsel bir güç oluşturmuştur. Sınav Ailesi artık dört temel alanda uzman ekibiyle tam kapsamlı destek sağlamaktadır.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(214, 48, 49, 0.12); margin-bottom: 2.5rem; border-left: 6px solid #d63031; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(214, 48, 49, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(214, 48, 49, 0.12)'">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                            <h4 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.2rem; max-width: 80%;">
+                                <i class="fas fa-users-cog" style="color: #d63031; margin-right: 0.8rem;"></i>Aile Danışmanlığı Program Genişletildi
+                            </h4>
+                            <span style="color: #999; font-size: 0.85rem; background: rgba(214, 48, 49, 0.1); padding: 0.4rem 0.8rem; border-radius: 20px; font-weight: 600;">2025</span>
+                        </div>
+                        <p style="color: var(--text-light); line-height: 1.8; margin: 0; font-size: 0.95rem;">
+                            Ebeveynlerden gelen talep doğrultusunda aile danışmanlığı programı genişletilmiştir. Artık hafta içi, hafta sonları ve çevrimiçi seçenekleriyle ebeveynlerin uygun saatlerinde danışmanlık hizmeti sunulmaktadır. Aile-öğrenci-uzman koordinasyonu daha da kuvvetlendirilmiştir.
+                        </p>
+                    </div>
+
+                   
                 </div>
             </div>
         </div>
@@ -398,9 +203,10 @@
                 <div class="footer-section">
                     <h4>Hızlı Bağlantılar</h4>
                     <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#about">Hakkında</a></li>
+                        <li><a href="index.html#experts">Uzmanlar</a></li>
+                        <li><a href="index.html#services">Hizmetler</a></li>
                         <li><a href="iletisim.html">İletişim</a></li>
-                        <li><a href="sertifikalar.html">Sertifikalar</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -422,7 +228,7 @@
             <div class="footer-bottom">
                 <p>&copy; 2024 Sınav Ailesi. Tüm hakları saklıdır.</p>
                 <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255, 255, 255, 0.7); border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1rem;">
-                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin kurucusuyla iletişime geçebilirsiniz.
+                    💻 Bu web sitesi <strong>Çağatay Çayır</strong> tarafından tasarlanmış olup detaylı bilgi için <a href="tel:05426101403" style="color: #1abc9c; text-decoration: none;"><strong>0542 610 1403</strong></a> telefon numarasını arayabilir veya <a href="mailto:cagatayca07@gmail.com" style="color: #1abc9c; text-decoration: none;"><strong>cagatayca07@gmail.com</strong></a> mailiyle sitenin sahibiyle iletişime geçebilirsiniz.
                 </p>
             </div>
         </div>
@@ -431,4 +237,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
