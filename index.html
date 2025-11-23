@@ -387,6 +387,21 @@
             }
         }
 
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 28px;
+            z-index: 1050;
+            display: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        }
+
         /* FAQ Section Responsive */
         .faq-item-header:hover {
             background-color: rgba(0, 160, 160, 0.12) !important;
@@ -617,26 +632,34 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Ana Sayfa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experts">Uzmanlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Hizmetler</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-layer-group"></i> Sayfa İçeriği
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="contentDropdown">
+                            <li><a class="dropdown-item" href="#home">Ana Sayfa</a></li>
+                            <li><a class="dropdown-item" href="#about">Hakkında</a></li>
+                            <li><a class="dropdown-item" href="#experts">Uzmanlar</a></li>
+                            <li><a class="dropdown-item" href="#services">Hizmetler</a></li>
+                            <li><a class="dropdown-item" href="#comments">Yorumlar</a></li>
+                            <li><a class="dropdown-item" href="#faq">SSS</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-graduation-cap"></i> Uzmanlıkların Kapsamı
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="psikoloji.html"><i class="fas fa-brain"></i> Psikolojik Destek</a></li>
-                            <li><a class="dropdown-item" href="uyku-beslenme.html"><i class="fas fa-utensils"></i> Uyku & Beslenme</a></li>
+                            <li><a class="dropdown-item" href="saglik.html"><i class="fas fa-heartbeat"></i> Sağlık</a></li>
                             <li><a class="dropdown-item" href="mentorlik.html"><i class="fas fa-handshake"></i> Mentörlük Programı</a></li>
+                            <li><a class="dropdown-item" href="ozelders.html"><i class="fas fa-book-open"></i> Özel Ders</a></li>
                             <li><a class="dropdown-item" href="egitim.html"><i class="fas fa-book"></i> Bireysel Eğitim</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="ailedanismanligi.html"><i class="fas fa-users"></i> Aile Danışmanlığı</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="medya.html">Medya</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#comments">Yorumlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">SSS</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
                     <li class="nav-item"><a class="nav-link" href="sertifikalar.html">Sertifikalar</a></li>
                 </ul>
@@ -698,7 +721,7 @@
                         </h2>
                         
                         <p class="hero-description" style="font-size: clamp(1rem, 2vw, 1.25rem); color: #555; line-height: 1.9; margin-bottom: 3rem; max-width: 650px; font-weight: 500; margin-left: auto; margin-right: auto;">
-                            Psikoloji, aile danışmanlığı, mentörlük, uyku-beslenme ve bireysel eğitim desteğini tek çatı altında toplayan <strong style="color: #1abc9c;">bütünsel bir öğrenci geliştirme modeli</strong>.
+                            Psikoloji, aile danışmanlığı, mentörlük, sağlık ve bireysel eğitim desteğini tek çatı altında toplayan <strong style="color: #1abc9c;">bütünsel bir öğrenci geliştirme modeli</strong>.
                         </p>
                         
                         <!-- Statistics Cards -->
@@ -734,10 +757,10 @@
                         <!-- Sağ Floating Card 1: Beslenme -->
                         <div style="background: white; padding: 2.2rem; border-radius: 1.5rem; box-shadow: 0 20px 50px rgba(52, 152, 219, 0.2); width: 100%; max-width: 260px; border-left: 6px solid #3498db; animation: float 3.5s ease-in-out infinite reverse;">
                             <div style="display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1rem;">
-                                <i class="fas fa-utensils" style="font-size: 2.8rem; color: #3498db;"></i>
-                                <h3 style="margin: 0; color: #3498db; font-size: 1.25rem;">Beslenme</h3>
+                                <i class="fas fa-heartbeat" style="font-size: 2.8rem; color: #3498db;"></i>
+                                <h3 style="margin: 0; color: #3498db; font-size: 1.25rem;">Sağlık</h3>
                             </div>
-                            <p style="color: #555; font-size: 0.9rem; margin: 0; line-height: 1.5;">Uyku düzeni ve sağlık</p>
+                            <p style="color: #555; font-size: 0.9rem; margin: 0; line-height: 1.5;">Sağlık düzeni (uyku ve beslenme)</p>
                         </div>
                         
                         <!-- Sağ Floating Card 2: Mentörlük -->
@@ -825,7 +848,7 @@
                 <div style="background: white; padding: 3rem 2.5rem; border-radius: 2rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08); margin-bottom: 4rem; border-top: 5px solid #1abc9c; position: relative; overflow: hidden;">
                     <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(26, 188, 156, 0.05), transparent); border-radius: 50%;"></div>
                     <p style="font-size: 1.35rem; line-height: 1.95; color: #2c3e50; margin-bottom: 0; position: relative; z-index: 1;">
-                        <strong style="color: #1abc9c; font-size: 1.4rem;">Sınav Ailesi</strong> projesi; <strong style="color: #3498db;">psikoloji, aile danışmanlığı, mentörlük, uyku-beslenme düzeni ve bireysel eğitim desteğini</strong> tek bir çatı altında toplayan <strong style="color: #1abc9c; font-size: 1.4rem;">bütünsel bir öğrenci geliştirme modelidir.</strong>
+                        <strong style="color: #1abc9c; font-size: 1.4rem;">Sınav Ailesi</strong> projesi; <strong style="color: #3498db;">psikoloji, aile danışmanlığı, mentörlük, sağlık düzeni ve bireysel eğitim desteğini</strong> tek bir çatı altında toplayan <strong style="color: #1abc9c; font-size: 1.4rem;">bütünsel bir öğrenci geliştirme modelidir.</strong>
                     </p>
                 </div>
 
@@ -836,7 +859,7 @@
                 <div class="about-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-bottom: 4rem;">
                     
                     <!-- Feature 1 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(26, 188, 156, 0.1) 0%, rgba(26, 188, 156, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(26, 188, 156, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(26, 188, 156, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(26, 188, 156, 0.25)'; this.style.borderColor='#1abc9c';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(26, 188, 156, 0.1)'; this.style.borderColor='rgba(26, 188, 156, 0.3)';">
+                    <div class="feature-card" data-title="Duygusal Dayanıklılık" data-body="Psikolog rehberliğinde stres yönetimi, duygu düzenleme teknikleri, kriz anlarında aile içi destek planları ve travma sonrası iyileştirme. Bireysel terapilerin yanı sıra grup çalışmaları, meditasyon ve farkındalık uygulamalarıyla duygusal zekanın geliştirilmesi hedeflenir. Kaygı bozuklukları, depresyon, özgüven sorunları ve sosyal kaygı konusunda uzman desteği sunulur. Öğrenci ve aile arasında iletişim köprüsü kurarak uyum sağlanır." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(26, 188, 156, 0.1) 0%, rgba(26, 188, 156, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(26, 188, 156, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(26, 188, 156, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(26, 188, 156, 0.25)'; this.style.borderColor='#1abc9c';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(26, 188, 156, 0.1)'; this.style.borderColor='rgba(26, 188, 156, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #1abc9c, #00d4d4); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(26, 188, 156, 0.3);">
                             <i class="fas fa-heart" style="color: white; font-size: 2.2rem;"></i>
                         </div>
@@ -845,7 +868,7 @@
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(52, 152, 219, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(52, 152, 219, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(52, 152, 219, 0.25)'; this.style.borderColor='#3498db';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(52, 152, 219, 0.1)'; this.style.borderColor='rgba(52, 152, 219, 0.3)';">
+                    <div class="feature-card" data-title="Bilişsel Geliştirme" data-body="Eğitim uzmanı rehberliğinde öğrenme stratejileri, bellek teknikleri, dikkat artırıcı uygulamalar ve bilişsel esneklik eğitimi. Akademik derslerde zorlanılan alanlar belirlenerek kişiselleştirilmiş çalışma planları hazırlanır. Öz-düzenleme yetenekleri geliştirilir ve öğrenmeye karşı olumlu tutum oluşturulur. Problem çözme yeteneğinin artırılması ve üstbilişsel farkındalığın kazandırılması hedeflenmiştir." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(52, 152, 219, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(52, 152, 219, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(52, 152, 219, 0.25)'; this.style.borderColor='#3498db';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(52, 152, 219, 0.1)'; this.style.borderColor='rgba(52, 152, 219, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #3498db, #5dade2); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);">
                             <i class="fas fa-brain" style="color: white; font-size: 2.2rem;"></i>
                         </div>
@@ -854,16 +877,16 @@
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(46, 204, 113, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(46, 204, 113, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(46, 204, 113, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(46, 204, 113, 0.25)'; this.style.borderColor='#2ecc71';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(46, 204, 113, 0.1)'; this.style.borderColor='rgba(46, 204, 113, 0.3)';">
+                    <div class="feature-card" data-title="Sağlık" data-body="Kapsamlı sağlık hizmetleri sunuyoruz: uyku hijyeni, beslenme planları, fiziksel aktivite, stres yönetimi, bağışıklık sistemi desteği ve laboratur takibi. Kronik hastalıklar, enfeksiyon hastalıkları, ruh sağlığı sorunları ve ergenlik döneminde sağlık problemleriyle başa çıkma konusunda uzman danışmanlık sağlanır. Akademik başarının biyolojik temeli sağlıklı yaşam alışkanlıklarında yatar; bu nedenle tüm hizmetler sağlık ile entegre edilmiştir." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(46, 204, 113, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(46, 204, 113, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(46, 204, 113, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(46, 204, 113, 0.25)'; this.style.borderColor='#2ecc71';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(46, 204, 113, 0.1)'; this.style.borderColor='rgba(46, 204, 113, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #2ecc71, #58d68d); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);">
-                            <i class="fas fa-apple-alt" style="color: white; font-size: 2.2rem;"></i>
+                            <i class="fas fa-heartbeat" style="color: white; font-size: 2.2rem;"></i>
                         </div>
-                        <h4 style="color: #2c3e50; font-size: 1.25rem; display: block; margin-bottom: 0.8rem; font-weight: 800;">🥗 Sağlık ve Beslenme</h4>
-                        <p style="color: #666; font-size: 0.95rem; margin: 0; line-height: 1.7; font-weight: 500;">Uyku düzeni ve beslenme stratejileriyle biyolojik dengeyi sağlama</p>
+                        <h4 style="color: #2c3e50; font-size: 1.25rem; display: block; margin-bottom: 0.8rem; font-weight: 800;">❤️ Sağlık</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0; line-height: 1.7; font-weight: 500;">Uyku, beslenme, fiziksel aktivite ve genel sağlık takibi hizmetleri</p>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, rgba(241, 196, 15, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(241, 196, 15, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(241, 196, 15, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(241, 196, 15, 0.25)'; this.style.borderColor='#f1c40f';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(241, 196, 15, 0.1)'; this.style.borderColor='rgba(241, 196, 15, 0.3)';">
+                    <div class="feature-card" data-title="Akademik Başarı" data-body="Sınav teknikleri, zaman yönetimi, sınava hazırlık stratejileri ve bireyselleştirilmiş çalışma planları ile akademik başarı sağlanır. Mentor rehberliğinde ders bazında zorluk yaşanan konular tespit edilerek hedefli çalışmalar yapılır. Başarı ölçülebilir hedeflerle izlenir ve düzenli olarak aile ile paylaşılır. Okul notlarının iyileştirilmesi ve yerleştirme sınavlarında başarı elde etme konusunda yapılandırılmış programlar sunulur." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, rgba(241, 196, 15, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(241, 196, 15, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(241, 196, 15, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(241, 196, 15, 0.25)'; this.style.borderColor='#f1c40f';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(241, 196, 15, 0.1)'; this.style.borderColor='rgba(241, 196, 15, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #f1c40f, #f4d03f); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(241, 196, 15, 0.3);">
                             <i class="fas fa-graduation-cap" style="color: white; font-size: 2.2rem;"></i>
                         </div>
@@ -872,7 +895,7 @@
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(155, 89, 182, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(155, 89, 182, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(155, 89, 182, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(155, 89, 182, 0.25)'; this.style.borderColor='#9b59b6';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(155, 89, 182, 0.1)'; this.style.borderColor='rgba(155, 89, 182, 0.3)';">
+                    <div class="feature-card" data-title="Güvenli Ortam" data-body="Gizlilik ilkeleri ve aile işbirliğine dayanarak güvenli bir destek ortamı sağlanır. Her öğrencinin kişisel sorunları, ilerlemesi ve hassas bilgileri güvenle saklanır ve yalnızca ailesi ile paylaşılır. Hatalardan ve başarısızlıklardan öğrenme odaklı yaklaşımlar benimsenerek öğrenci kendisini rahat hissetmektedir. Hukuki ve etik ilkeler çerçevesinde profesyonel desteğin kalitesi ve güvenilirliği sağlanır." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(155, 89, 182, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(155, 89, 182, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(155, 89, 182, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(155, 89, 182, 0.25)'; this.style.borderColor='#9b59b6';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(155, 89, 182, 0.1)'; this.style.borderColor='rgba(155, 89, 182, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #9b59b6, #b875d9); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(155, 89, 182, 0.3);">
                             <i class="fas fa-shield-alt" style="color: white; font-size: 2.2rem;"></i>
                         </div>
@@ -881,24 +904,38 @@
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="feature-card" style="padding: 2.5rem; background: linear-gradient(135deg, rgba(230, 126, 34, 0.1) 0%, rgba(230, 126, 34, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(230, 126, 34, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(230, 126, 34, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(230, 126, 34, 0.25)'; this.style.borderColor='#e67e22';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(230, 126, 34, 0.1)'; this.style.borderColor='rgba(230, 126, 34, 0.3)';">
+                    <div class="feature-card" data-title="Bütünsel Yaklaşım" data-body="Dört uzmanlık alanının (psikoloji, aile danışmanlığı, mentörlük, sağlık) koordineli çalışması ile öğrenciye özel, uzun vadeli gelişim planları oluşturulur. Aile ve okul işbirliği bu yaklaşımın temelini oluşturur. İlerleme düzenli olarak ölçülür ve programa gerektiğinde esneklik sağlanır. Öğrencinin holistic gelişimi (akademik, duygusal, fiziksel, sosyal) hedeflenir ve bu gelişim süreğen olarak monitörize edilir." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(230, 126, 34, 0.1) 0%, rgba(230, 126, 34, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(230, 126, 34, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(230, 126, 34, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(230, 126, 34, 0.25)'; this.style.borderColor='#e67e22';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(230, 126, 34, 0.1)'; this.style.borderColor='rgba(230, 126, 34, 0.3)';">
                         <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #e67e22, #ec971f); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(230, 126, 34, 0.3);">
                             <i class="fas fa-users" style="color: white; font-size: 2.2rem;"></i>
                         </div>
                         <h4 style="color: #2c3e50; font-size: 1.25rem; display: block; margin-bottom: 0.8rem; font-weight: 800;">👥 Bütünsel Yaklaşım</h4>
                         <p style="color: #666; font-size: 0.95rem; margin: 0; line-height: 1.7; font-weight: 500;">Dört uzmanlaştırma alanının koordineli bir şekilde çalışması</p>
                     </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-card" data-title="Özel Ders" data-body="ÖZEL Z KUŞAĞI ONLİNE AKADEMİ kapsamında alanında uzman ve tecrübeli öğretmenler tarafından sunulan bireysel ve grup dersleri. 5-8. sınıflar için Matematik, Fen Bilgisi, İngilizce ve Türkçe dersleri; 9-12. sınıflar için Matematik, Fizik, Kimya ve Biyoloji dersleri. Her derste öğrencinin özel ihtiyaçlarına göre kişiselleştirilmiş yaklaşım, güçlü yönlerin geliştirilmesi ve zayıf noktaların desteklenmesi hedeflenir. İnteraktif öğrenme, işbirlikçi problem çözme ve düzenli ilerleme takibi ile akademik başarı ve öz-güven artırılır." style="padding: 2.5rem; background: linear-gradient(135deg, rgba(26, 188, 156, 0.1) 0%, rgba(26, 188, 156, 0.05) 100%); border-radius: 1.8rem; border: 2px solid rgba(26, 188, 156, 0.3); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 10px 30px rgba(26, 188, 156, 0.1); cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(26, 188, 156, 0.25)'; this.style.borderColor='#1abc9c';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(26, 188, 156, 0.1)'; this.style.borderColor='rgba(26, 188, 156, 0.3)';">
+                        <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #1abc9c, #00d4d4); border-radius: 1.2rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 8px 20px rgba(26, 188, 156, 0.3);">
+                            <i class="fas fa-book-open" style="color: white; font-size: 2.2rem;"></i>
+                        </div>
+                        <h4 style="color: #2c3e50; font-size: 1.25rem; display: block; margin-bottom: 0.8rem; font-weight: 800;">📚 Özel Ders</h4>
+                        <p style="color: #666; font-size: 0.95rem; margin: 0; line-height: 1.7; font-weight: 500;">Alanında uzman öğretmenlerle bire-bir ve grup dersleri</p>
+                    </div>
                 </div>
 
-                <!-- Motto Box -->
-                <div style="text-align: center; padding: 3.5rem 2.5rem; background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%); border-radius: 2.5rem; position: relative; overflow: hidden; box-shadow: 0 15px 50px rgba(26, 188, 156, 0.3); margin-bottom: 4rem;">
+                <!-- Motto Box - Temel Felsefe -->
+                <div class="motto-box" style="padding: 3rem 2.5rem; background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%); border-radius: 2.5rem; position: relative; overflow: hidden; box-shadow: 0 15px 50px rgba(26, 188, 156, 0.3); margin-bottom: 4rem; cursor: pointer;">
                     <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(40px);"></div>
                     <div style="position: absolute; bottom: -80px; left: -80px; width: 250px; height: 250px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(40px);"></div>
                     <div style="position: relative; z-index: 1;">
-                        <p style="font-size: 2.2rem; color: white; font-weight: 900; margin: 0; line-height: 1.8; text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
-                            ✨ "Aynı hedefe bakan kalplerin <br> oluşturduğu güç" ✨
+                        <h2 style="font-size: 2.2rem; color: white; font-weight: 900; margin: 0 0 1rem 0; line-height: 1.8; text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                            ✨ Sınav Ailesi'nin Temel Felsefesi ✨
+                        </h2>
+                        <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.95); margin: 0; font-weight: 600; line-height: 1.7;">
+                            "Aynı hedefe bakan kalplerin oluşturduğu güç"
                         </p>
-                        <p style="font-size: 1.05rem; color: rgba(255, 255, 255, 0.95); margin-top: 1.5rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Sınav Ailesi'nin Temel Felsefesi</p>
+                        <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin-top: 1.2rem; margin-bottom: 0; line-height: 1.6;">
+                            <i class="fas fa-mouse"></i> Devamını okumak için tıklayın...
+                        </p>
                     </div>
                 </div>
             </div>
@@ -961,13 +998,13 @@
                 <!-- Dr. Bülent Herek -->
                 <div style="display: flex; align-items: center; gap: 2rem; background: white; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 8px 25px rgba(0, 119, 182, 0.12); transition: all 0.3s ease; border-left: 6px solid #3498db;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 40px rgba(0, 119, 182, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 119, 182, 0.12)'">
                     <div style="width: 120px; height: 120px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 20px rgba(0, 119, 182, 0.2);">
-                        <img src="images/drbülentherek/guncel4.jpg" alt="Dr. Bülent Herek" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/drbülentherek/guncel4.jpg" alt="Uzm. Dr. Bülent Herek" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div style="flex: 1;">
-                        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; font-weight: 800; color: var(--text-dark);">Dr. Bülent Herek</h3>
-                        <p style="margin: 0 0 1rem 0; font-size: 1.05rem; font-weight: 700; color: #3498db;">Uyku Sağlığı ve Beslenme Uzmanı</p>
+                        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem; font-weight: 800; color: var(--text-dark);">Uzm. Dr. Bülent Herek</h3>
+                        <p style="margin: 0 0 1rem 0; font-size: 1.05rem; font-weight: 700; color: #3498db;">Aile Hekimliği Uzmanı</p>
                         <p style="margin: 0 0 1.5rem 0; color: #555; line-height: 1.6; font-size: 0.95rem;">
-                            Uyku sağlığı ve sağlıklı beslenme alanlarında bilimsel temelli stratejiler sunar. Hafıza pekiştirme, dikkat süresini artırma, zihinsel toksin temizliği ve biyolojik kaygı yönetimi üzerine uzmanlaşır.
+                            Sağlık alanlarında bilimsel temelli stratejiler sunar. Hafıza pekiştirme, dikkat süresini artırma, biyolojik dayanıklılık ve genel sağlık yönetimi üzerine çalışır.
                         </p>
                         <button class="expert-button" data-bs-toggle="modal" data-bs-target="#expertModal2" style="background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%); color: white; padding: 0.6rem 1.8rem; border: none; border-radius: 2rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Detaylı Bilgi</button>
                     </div>
@@ -1006,13 +1043,13 @@
                         <small style="color: #1abc9c; font-weight: 600;"><i class="fas fa-arrow-right"></i> Detaylar</small>
                     </div>
                 </a>
-                <a href="uyku-beslenme.html" style="text-decoration: none;">
+                <a href="saglik.html" style="text-decoration: none;">
                     <div class="service-card" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
                         <div class="service-icon">
-                            <i class="fas fa-utensils"></i>
+                            <i class="fas fa-heartbeat"></i>
                         </div>
-                        <h4>Uyku & Beslenme</h4>
-                        <p>Bilimsel temelli uyku düzeni ve sağlıklı beslenme danışmanlığı</p>
+                        <h4>Sağlık</h4>
+                        <p>Uyku, beslenme ve biyolojik dayanıklılık odaklı bilimsel temelli sağlık danışmanlığı</p>
                         <small style="color: #3498db; font-weight: 600;"><i class="fas fa-arrow-right"></i> Detaylar</small>
                     </div>
                 </a>
@@ -1209,13 +1246,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="expertModal2Label">Dr. Bülent Herek</h5>
+                    <h5 class="modal-title" id="expertModal2Label">Uzm. Dr. Bülent Herek</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p><strong>Uzmanlık Alanı:</strong> Uyku Sağlığı ve Beslenme</p>
+                    <p><strong>Uzmanlık Alanı:</strong> Aile Hekimliği</p>
                     <p>
-Merhaba, ben Dr. Bülent Herek.
+Merhaba, ben Uzm. Dr. Bülent Herek.
 Hayat yolculuğum, 23 Haziran 1977 tarihinde Hatay'ın sıcak ve samimi ilçesi Dörtyol'da başladı. İlk öğrenimimi Yeniyurt İlkokulu'nda tamamladıktan sonra, belki de gelecekteki mesleğimin ilk işareti olan İskenderun İbni Sina Anadolu Lisesi'nden 1995 yılında mezun oldum. Lise yıllarımdan itibaren insan biyolojisine ve yaşamına duyduğum merak, beni Türkiye'nin en köklü tıp fakültelerinden birine taşıdı. 1996 yılında girdiğim İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi'ndeki zorlu ve keyifli eğitimimi 2005 yılında tamamlayarak "Tıp Doktoru" unvanımı aldım .
 Meslek hayatıma ilk adımımı, 2006 yılında Diyarbakır Silvan'daki Bayrambaşı Sağlık Ocağı'nda attım. Burada edindiğim saha tecrübesinin ardından, uzmanlık eğitimim için İstanbul'a döndüm. 2006-2010 yılları arasında İstanbul Eğitim ve Araştırma Hastanesi Aile Hekimliği Kliniği'nde uzmanlık eğitimimi tamamlayarak Aile Hekimliği Uzmanı oldum . Asistanlık yıllarımda bilimsel çalışmalara da ağırlık verdim; özellikle tiroid nodülleri üzerine yaptığım ve patoloji sonuçlarını karşılaştırdığım çalışmam Journal of Dialog in Endocrinology dergisinde yayınlandı .
 Uzmanlığımı aldıktan sonra kariyerim, sadece klinisyenlikle sınırlı kalmadı; sağlık yönetimi alanında da önemli sorumluluklar üstlendim. 2010-2013 yılları arasında Bursa'da Büyükorhan İlçe Hastanesi Başhekimliği görevini yürüttüm. Bu süreçte hem bir yönetici hem de bir hekim olarak ilçedeki sağlık hizmetlerinin kalitesini artırmaya yönelik çalışmalarım, İlçe Kaymakamlığı tarafından 2011 ve 2012 yıllarında iki kez Başarı Belgesi ile ödüllendirildi .
@@ -1621,6 +1658,86 @@ Evli ve üç çocuk babası bir hekim olarak , hem ailemden aldığım güçle h
             }
         });
     </script>
+        <!-- Back to top button -->
+        <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Yukarı çık">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-</body>
-</html>
+        <script>
+            // Back to top behavior
+            const backToTopBtn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.style.display = 'flex';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+
+            backToTopBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Feature card modal behavior
+            function createAndShowModal(title, bodyHtml) {
+                // remove existing
+                const existing = document.getElementById('featureModal');
+                if (existing) existing.remove();
+                const modalHtml = `
+                    <div class="modal fade" id="featureModal" tabindex="-1">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">${title}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                          </div>
+                          <div class="modal-body">
+                            ${bodyHtml}
+                          </div>
+                        </div>
+                      </div>
+                    </div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHtml);
+                const modalEl = document.getElementById('featureModal');
+                const bs = new bootstrap.Modal(modalEl);
+                bs.show();
+            }
+
+            document.querySelectorAll('.feature-card').forEach(card => {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', function () {
+                    const title = this.getAttribute('data-title') || this.querySelector('h4')?.innerText || 'Detay';
+                    const body = this.getAttribute('data-body') || this.querySelector('p')?.innerHTML || '';
+                    createAndShowModal(title, `<p style="line-height:1.8;">${body}</p>`);
+                });
+            });
+
+            // Motto box click -> temel felsefe modal (detaylı)
+            const mottoBox = document.querySelector('.motto-box');
+            if (mottoBox) {
+                mottoBox.style.cursor = 'pointer';
+                mottoBox.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const filosofiContent = `
+                      <div style="line-height:1.9; font-size:1rem; color:#2c3e50;">
+                        <h6 style="color:#1abc9c; font-weight:700; margin-bottom:1rem;">Sınav Ailesi — Temel Felsefe</h6>
+                        <p><strong>Sınav Ailesi</strong>, tek bir alan uzmanlaşması yerine; <strong>psikoloji, sağlık, mentörlük ve bireysel eğitim desteğinin koordineli çalışması</strong> ile öğrencinin başarısını desteklemektedir.</p>
+                        <p style="margin-top:1rem;"><strong>Temel Prensiplerimiz:</strong></p>
+                        <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+                          <li><strong>Bütünsellik:</strong> Öğrenci, duygusal, fiziksel, akademik ve sosyal açılardan bir bütündür. Her boyuta eşit önem verilir.</li>
+                          <li><strong>Ölçülebilir Hedefler:</strong> Her müdahale, başlangıç ve periyodik ölçümlerle desteklenir. İlerleme sayı ve veriler ile gösterilir.</li>
+                          <li><strong>Aile İşbirliği:</strong> Uzmanlar, ailelerle yakın işbirliği yaparak sürdürülebilir değişim sağlarlar.</li>
+                          <li><strong>Uzun Vadeli Perspektif:</strong> Kısa vadeli başarı değil; öğrencinin yıllar içinde sağlıklı enerji ve öğrenme kapasitesi kazanması hedeflenir.</li>
+                          <li><strong>Gizlilik ve Etik:</strong> Tüm bilgiler kanuni gizlilik altında saklanır. Kişisel veriler tamamen korunmuştur.</li>
+                        </ul>
+                        <p style="margin-top:1rem;"><strong>Neden Bütünsel Yaklaşım Gereklidir?</strong></p>
+                        <p>Araştırmalar göstermektedir ki; uyku, beslenme, duygusal denge ve akademik destek almayanlar yalnızca ders çalışanlara kıyasla daha çabuk yorulur, dikkat süresi düşer ve uzun vadede başarı elde edemezler. Tersine, dört alanın koordineli olarak desteklenmesi ile öğrenciler <strong>daha hızlı öğrenirler, hata yönetimini öğrenirler ve setback'lere karşı dayanıklı olurlar.</strong></p>
+                        <p style="margin-top:1rem; color:#666; font-size:0.95rem;"><em>Daha fazla bilgi almak için İletişim sayfasından bize ulaşabilirsiniz.</em></p>
+                      </div>`;
+                    createAndShowModal('Sınav Ailesi — Temel Felsefe', filosofiContent);
+                });
+            }
+        </script>
+    </body>
+    </html>
