@@ -80,66 +80,84 @@
             <!-- Emine Demir -->
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
-                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.12) 0%, rgba(0, 160, 160, 0.05) 100%); padding: 3rem; border-radius: 1.8rem; border-left: 6px solid #1abc9c; box-shadow: 0 10px 30px rgba(0, 160, 160, 0.12); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 45px rgba(0, 160, 160, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 160, 160, 0.12)'">
-                        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
-                            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #1abc9c, #3498db); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0, 160, 160, 0.25); overflow: hidden; padding: 3px;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.boxShadow='0 20px 40px rgba(26, 188, 156, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(26, 188, 156, 0.1), transparent); border-radius: 50%; pointer-events: none;"></div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; position: relative; z-index: 1;">
+                            <div style="width: 90px; height: 90px; background: rgba(26, 188, 156, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 5px;">
                                 <img src="images/emineDemirSertifikalar/guncel1.jpg" alt="Emine Demir" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                             </div>
-                            <div>
-                                <h3 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.5rem;">Empaz Aile Danışmanı Emine Demir</h3>
-                                <p style="color: #1abc9c; font-weight: 700; margin: 0.7rem 0 0 0; font-size: 1.05rem;">
-                                    <i class="fas fa-user-check" style="margin-right: 0.5rem;"></i>Psikolojik Destek Uzmanı
-                                </p>
+                            <div style="flex: 1; min-width: 200px;">
+                                <h3 style="color: #2c3e50; font-weight: 900; margin: 0 0 0.5rem 0; font-size: 1.4rem;">Empaz Aile Danışmanı Emine Demir</h3>
+                                <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(26, 188, 156, 0.1); color: #1abc9c; border-radius: 2rem; font-weight: 700; font-size: 0.9rem;">
+                                    <i class="fas fa-user-check"></i> Psikolojik Destek Uzmanı
+                                </span>
                             </div>
                         </div>
-                        <div style="margin-top: 1.5rem;">
-                            <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem;">
-                                <i class="fas fa-certificate" style="color: #1abc9c; margin-right: 0.8rem;"></i> Sertifikalar ve Nitelikler
+                        
+                        <div style="position: relative; z-index: 1;">
+                            <h5 style="color: #2c3e50; font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.6rem;">
+                                <div style="width: 32px; height: 32px; background: rgba(26, 188, 156, 0.1); border-radius: 0.6rem; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-certificate" style="color: #1abc9c; font-size: 0.9rem;"></i>
+                                </div>
+                                Sertifikalar ve Nitelikler
                             </h5>
-                            <ul class="certificates-list" style="list-style: none; padding: 0; margin: 0;">
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s1.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
-                                    <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Çocuk Psikolojisi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Çocuk Psikolojisi Uzmanı</p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s1.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s2.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Diksiyon Eğitimi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Diksiyon Eğitmeni</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Çocuk Psikolojisi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Çocuk Psikolojisi Uzmanı</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s3.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s2.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Stres ve Zaman Yönetimi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Stres ve Zaman Yönetimi Uzmanı</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Diksiyon Eğitimi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Diksiyon Eğitmeni</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s4.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s3.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Yaşam Koçluğu</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Yaşam Koçu</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Stres ve Zaman Yönetimi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Stres ve Zaman Yönetimi Uzmanı</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s5.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s4.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Bilinç Altı Teknikleri</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Bilinç Altı Teknikleri Uzmanı</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Yaşam Koçluğu</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Yaşam Koçu</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s6.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s5.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Aile Danışmanlığı</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Aile Danışmanı</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Bilinç Altı Teknikleri</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Bilinç Altı Teknikleri Uzmanı</p>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/emineDemirSertifikalar/s6.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(26, 188, 156, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #1abc9c; font-size: 1.2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Aile Danışmanlığı</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Aile Danışmanı</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,45 +166,57 @@
                         <!-- Murat Çelik -->
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
-                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.12) 0%, rgba(0, 119, 182, 0.05) 100%); padding: 3rem; border-radius: 1.8rem; border-left: 6px solid #3498db; box-shadow: 0 10px 30px rgba(0, 119, 182, 0.12); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 45px rgba(0, 119, 182, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 119, 182, 0.12)'">
-                        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #3498db, #1abc9c); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0, 119, 182, 0.25); overflow: hidden; padding: 3px;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.boxShadow='0 20px 40px rgba(52, 152, 219, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(52, 152, 219, 0.1), transparent); border-radius: 50%; pointer-events: none;"></div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; position: relative; z-index: 1;">
+                            <div style="width: 90px; height: 90px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 5px;">
                                 <img src="images/MuratÇelikSertifikaları/guncel2.jpg" alt="Murat Çelik" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                             </div>
                             <div style="flex: 1; min-width: 200px;">
-                                <h3 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.5rem;">Özel Z Kuşağı Murat Çelik</h3>
-                                <p style="color: #3498db; font-weight: 700; margin: 0.7rem 0 0 0; font-size: 1.05rem;">
-                                    <i class="fas fa-user-check" style="margin-right: 0.5rem;"></i>Bireysel Eğitim Desteği Uzmanı
-                                </p>
+                                <h3 style="color: #2c3e50; font-weight: 900; margin: 0 0 0.5rem 0; font-size: 1.4rem;">Özel Z Kuşağı Murat Çelik</h3>
+                                <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(52, 152, 219, 0.1); color: #3498db; border-radius: 2rem; font-weight: 700; font-size: 0.9rem;">
+                                    <i class="fas fa-user-check"></i> Bireysel Eğitim Desteği Uzmanı
+                                </span>
                             </div>
                         </div>
-                        <div style="margin-top: 1.5rem;">
-                            <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem;">
-                                <i class="fas fa-certificate" style="color: #3498db; margin-right: 0.8rem;"></i> Sertifikalar ve Nitelikler
+                        
+                        <div style="position: relative; z-index: 1;">
+                            <h5 style="color: #2c3e50; font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.6rem;">
+                                <div style="width: 32px; height: 32px; background: rgba(52, 152, 219, 0.1); border-radius: 0.6rem; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-certificate" style="color: #3498db; font-size: 0.9rem;"></i>
+                                </div>
+                                Sertifikalar ve Nitelikler
                             </h5>
-                            <ul class="certificates-list" style="list-style: none; padding: 0; margin: 0;">
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s1.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
-                                    <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Gaziantep Üniversitesi Pedogolojik Formasyon Sertifikası</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;"></p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(52, 152, 219, 0.15)'; this.style.borderColor='rgba(52, 152, 219, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s1.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(52, 152, 219, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #3498db; font-size: 1.2rem;"></i>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s2.jpg')">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Gazi Üniversitesi Fen Edebiyat Fakültesi Fizik Bölümü Lisans Diploması</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;"></p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Gaziantep Üni. Formasyon</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Pedagojik Formasyon Sertifikası</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0; padding-bottom: 0; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s3.png')">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(52, 152, 219, 0.15)'; this.style.borderColor='rgba(52, 152, 219, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s2.jpg')">
+                                    <div style="width: 40px; height: 40px; background: rgba(52, 152, 219, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #3498db; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Aile Okulu Eğitimi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Aile Eğitimi Uzmanı</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Gazi Üni. Lisans Diploması</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Fen Edebiyat Fakültesi - Fizik</p>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(52, 152, 219, 0.15)'; this.style.borderColor='rgba(52, 152, 219, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';" onclick="openCertificateModal(this, 'images/MuratÇelikSertifikaları/s3.png')">
+                                    <div style="width: 40px; height: 40px; background: rgba(52, 152, 219, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #3498db; font-size: 1.2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Aile Okulu Eğitimi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Aile Eğitimi Uzmanı</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,59 +225,75 @@
             <!-- Dr. Bülent Herek -->
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
-                    <div style="background: linear-gradient(135deg, rgba(0, 119, 182, 0.12) 0%, rgba(0, 119, 182, 0.05) 100%); padding: 3rem; border-radius: 1.8rem; border-left: 6px solid #3498db; box-shadow: 0 10px 30px rgba(0, 119, 182, 0.12); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 45px rgba(0, 119, 182, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 119, 182, 0.12)'">
-                        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #3498db, #1abc9c); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0, 119, 182, 0.25); overflow: hidden; padding: 3px;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.boxShadow='0 20px 40px rgba(46, 204, 113, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(46, 204, 113, 0.1), transparent); border-radius: 50%; pointer-events: none;"></div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; position: relative; z-index: 1;">
+                            <div style="width: 90px; height: 90px; background: rgba(46, 204, 113, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 5px;">
                                 <img src="images/drbülentherek/guncel4.jpg" alt="Uzm. Dr. Bülent Herek" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                             </div>
                             <div style="flex: 1; min-width: 200px;">
-                                <h3 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.5rem;">Uzm. Dr. Bülent Herek</h3>
-                                <p style="color: #3498db; font-weight: 700; margin: 0.7rem 0 0 0; font-size: 1.05rem;">
-                                    <i class="fas fa-user-check" style="margin-right: 0.5rem;"></i>Aile Hekimliği Uzmanı
-                                </p>
+                                <h3 style="color: #2c3e50; font-weight: 900; margin: 0 0 0.5rem 0; font-size: 1.4rem;">Uzm. Dr. Bülent Herek</h3>
+                                <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(46, 204, 113, 0.1); color: #2ecc71; border-radius: 2rem; font-weight: 700; font-size: 0.9rem;">
+                                    <i class="fas fa-user-check"></i> Aile Hekimliği Uzmanı
+                                </span>
                             </div>
                         </div>
-                        <div style="margin-top: 1.5rem;">
-                            <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem;">
-                                <i class="fas fa-certificate" style="color: #3498db; margin-right: 0.8rem;"></i> Sertifikalar ve Nitelikler
+                        
+                        <div style="position: relative; z-index: 1;">
+                            <h5 style="color: #2c3e50; font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.6rem;">
+                                <div style="width: 32px; height: 32px; background: rgba(46, 204, 113, 0.1); border-radius: 0.6rem; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-certificate" style="color: #2ecc71; font-size: 0.9rem;"></i>
+                                </div>
+                                Sertifikalar ve Nitelikler
                             </h5>
-                            <ul class="certificates-list" style="list-style: none; padding: 0; margin: 0;">
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
-                                    <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Tıp Doktoru</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi - 2005</p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(46, 204, 113, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #2ecc71; font-size: 1.2rem;"></i>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Aile Hekimliği Uzmanı</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">İstanbul Eğitim ve Araştırma Hastanesi - 2010</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Tıp Doktoru</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">İÜ Cerrahpaşa Tıp Fakültesi - 2005</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(46, 204, 113, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #2ecc71; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Mezoterapi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sağlık Bakanlığı Onaylı Sertifikası</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Aile Hekimliği Uzmanı</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">İstanbul E. ve A. Hastanesi - 2010</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 119, 182, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(46, 204, 113, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #2ecc71; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Ozonterapi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sağlık Bakanlığı Onaylı Sertifikası</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Mezoterapi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sağlık Bakanlığı Onaylı Sertifikası</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0; padding-bottom: 0; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#3498db'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #3498db; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(46, 204, 113, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #2ecc71; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Kupa-Hacamat</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sağlık Bakanlığı Onaylı Sertifikası</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Ozonterapi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sağlık Bakanlığı Onaylı Sertifikası</p>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(46, 204, 113, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #2ecc71; font-size: 1.2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Kupa-Hacamat</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sağlık Bakanlığı Onaylı Sertifikası</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,108 +302,141 @@
             <!-- Murat Altunkaya -->
             <div class="row mb-5">
                 <div class="col-lg-10 mx-auto">
-                    <div style="background: linear-gradient(135deg, rgba(0, 160, 160, 0.12) 0%, rgba(0, 160, 160, 0.05) 100%); padding: 3rem; border-radius: 1.8rem; border-left: 6px solid #1abc9c; box-shadow: 0 10px 30px rgba(0, 160, 160, 0.12); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 45px rgba(0, 160, 160, 0.18)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 160, 160, 0.12)'">
-                        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #1abc9c, #3498db); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0, 160, 160, 0.25); overflow: hidden; padding: 3px;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.boxShadow='0 20px 40px rgba(243, 156, 18, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'; this.style.transform='translateY(0)';">
+                        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(243, 156, 18, 0.1), transparent); border-radius: 50%; pointer-events: none;"></div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; position: relative; z-index: 1;">
+                            <div style="width: 90px; height: 90px; background: rgba(243, 156, 18, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 5px;">
                                 <img src="images/murataltunkaya/guncel3.jpg" alt="Murat Altunkaya" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                             </div>
                             <div style="flex: 1; min-width: 200px;">
-                                <h3 style="color: var(--text-dark); font-weight: 800; margin: 0; font-size: 1.5rem;">Fokus Hoca Murat Altunkaya</h3>
-                                <p style="color: #1abc9c; font-weight: 700; margin: 0.7rem 0 0 0; font-size: 1.05rem;">
-                                    <i class="fas fa-user-check" style="margin-right: 0.5rem;"></i>Odaklanma ve Verimlilik Koçu
-                                </p>
+                                <h3 style="color: #2c3e50; font-weight: 900; margin: 0 0 0.5rem 0; font-size: 1.4rem;">Fokus Hoca Murat Altunkaya</h3>
+                                <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(243, 156, 18, 0.1); color: #f39c12; border-radius: 2rem; font-weight: 700; font-size: 0.9rem;">
+                                    <i class="fas fa-user-check"></i> Odaklanma ve Verimlilik Koçu
+                                </span>
                             </div>
                         </div>
-                        <div style="margin-top: 1.5rem;">
-                            <h5 style="color: var(--text-dark); font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem;">
-                                <i class="fas fa-certificate" style="color: #1abc9c; margin-right: 0.8rem;"></i> Sertifikalar ve Nitelikler
+                        
+                        <div style="position: relative; z-index: 1;">
+                            <h5 style="color: #2c3e50; font-weight: 800; margin-bottom: 1.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.6rem;">
+                                <div style="width: 32px; height: 32px; background: rgba(243, 156, 18, 0.1); border-radius: 0.6rem; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-certificate" style="color: #f39c12; font-size: 0.9rem;"></i>
+                                </div>
+                                Sertifikalar ve Nitelikler
                             </h5>
-                            <ul class="certificates-list" style="list-style: none; padding: 0; margin: 0;">
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
-                                    <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Fen Bilimleri & Kimya Öğretmenliği</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Dokuz Eylül Üniversitesi - 20+ yıl MEB Tecrübesi</p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Profesyonel Yaşam Koçluğu</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Barış Ege'den Sertifikalı Yaşam Koçu</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Fen Bilimleri Öğretmenliği</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">DEÜ - 20+ yıl MEB Tecrübesi</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Bilinçaltı Dönüşüm Eğitimi</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Barış Ege'den Sertifikalı Transformasyon Koçu</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Profesyonel Yaşam Koçluğu</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Barış Ege'den Sertifikalı Yaşam Koçu</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Hızlı Okuma Teknikleri</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Mehmet Taşhanlıgil'den Sertifikalı Hızlı Okuma Eğitmeni</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Bilinçaltı Dönüşüm Eğitimi</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Barış Ege'den Sertifikalı Transformasyon Koçu</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0, 160, 160, 0.2); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Eğitim Koçluğu Temelleri</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Fatih Kalkınç'tan Sertifikalı Eğitim Koçu</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Hızlı Okuma Teknikleri</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Hızlı Okuma Eğitmeni</p>
                                     </div>
-                                </li>
-                                <li class="certificate-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0; padding-bottom: 0; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.paddingLeft='0.8rem'; this.style.borderLeftColor='#1abc9c'; this.style.borderLeftWidth='3px';" onmouseout="this.style.paddingLeft='0'; this.style.borderLeftColor='transparent'; this.style.borderLeftWidth='0';">
-                                    <i class="fas fa-check-circle" style="color: #1abc9c; margin-top: 0.3rem; font-size: 1.1rem; flex-shrink: 0;"></i>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
+                                    </div>
                                     <div>
-                                        <strong style="color: var(--text-dark); font-size: 0.95rem;">Odaklanma & Verimlilik Koçluğu</strong>
-                                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0; font-size: 0.85rem;">Sertifikalı Fokus Hoca - Özel Gelişim Uzmanı</p>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Eğitim Koçluğu Temelleri</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Fatih Kalkınç'tan Sertifikalı Eğitim Koçu</p>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="certificate-item" style="background: #f8f9fa; border: 1px solid rgba(0,0,0,0.05); border-radius: 1rem; padding: 1.2rem; transition: all 0.3s ease; display: flex; align-items: flex-start; gap: 1rem;" onmouseover="this.style.background='white'; this.style.boxShadow='0 10px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.background='#f8f9fa'; this.style.boxShadow='none'; this.style.borderColor='rgba(0,0,0,0.05)'; this.style.transform='translateY(0)';">
+                                    <div style="width: 40px; height: 40px; background: rgba(243, 156, 18, 0.1); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-award" style="color: #f39c12; font-size: 1.2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong style="color: #2c3e50; font-size: 0.95rem; display: block; margin-bottom: 0.2rem;">Verimlilik Koçluğu</strong>
+                                        <p style="color: #666; margin: 0; font-size: 0.85rem; line-height: 1.4;">Sertifikalı Fokus Hoca</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
             <!-- Credentials Summary -->
-            <div class="row mt-5">
+            <div class="row mt-5 pt-4">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Neden Sınav Ailesi?</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); border-top: 4px solid #1abc9c;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-user-check" style="color: #1abc9c; margin-right: 0.5rem;"></i> Sertifikalı Uzmanlar
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0;">Tüm uzmanlarımız uluslararası standartlara göre eğitim görmüş ve sertifikalandırılmış profesyonellerdir.</p>
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <span style="display: inline-block; padding: 0.6rem 1.5rem; background: rgba(26, 188, 156, 0.1); border: 1.5px solid #1abc9c; border-radius: 2rem; color: #1abc9c; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">
+                            ⭐ FARKIMIZ
+                        </span>
+                        <h2 style="margin-top: 1.5rem; color: #2c3e50; font-weight: 900; font-size: 2.2rem;">Neden Sınav Ailesi?</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div style="background: white; padding: 2rem; border-radius: 1.2rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; align-items: flex-start; gap: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(26, 188, 156, 0.15)'; this.style.borderColor='rgba(26, 188, 156, 0.3)';">
+                                <div style="width: 55px; height: 55px; background: rgba(26, 188, 156, 0.1); border-radius: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-user-check" style="color: #1abc9c; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color: #2c3e50; font-weight: 800; font-size: 1.15rem; margin-bottom: 0.4rem;">Sertifikalı Uzmanlar</h5>
+                                    <p style="color: #666; margin: 0; font-size: 0.95rem; line-height: 1.5;">Tüm uzmanlarımız uluslararası standartlara göre eğitim görmüş ve sertifikalandırılmış profesyonellerdir.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); border-top: 4px solid #3498db;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-briefcase" style="color: #3498db; margin-right: 0.5rem;"></i> Geniş Deneyim
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0;">Ekip üyeleri toplamda 50+ yıllık profesyonel deneyimi ile gelen uzman kadrodur.</p>
+                        <div class="col-md-6">
+                            <div style="background: white; padding: 2rem; border-radius: 1.2rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; align-items: flex-start; gap: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(52, 152, 219, 0.15)'; this.style.borderColor='rgba(52, 152, 219, 0.3)';">
+                                <div style="width: 55px; height: 55px; background: rgba(52, 152, 219, 0.1); border-radius: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-briefcase" style="color: #3498db; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color: #2c3e50; font-weight: 800; font-size: 1.15rem; margin-bottom: 0.4rem;">Geniş Deneyim</h5>
+                                    <p style="color: #666; margin: 0; font-size: 0.95rem; line-height: 1.5;">Ekip üyeleri toplamda 50+ yıllık profesyonel deneyimi ile gelen uzman kadrodur.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); border-top: 4px solid #1abc9c;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-globe" style="color: #1abc9c; margin-right: 0.5rem;"></i> Uluslararası Standartlar
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0;">Hizmetlerimiz uluslararası danışmanlık ve eğitim standartlarına uygun olarak verilmektedir.</p>
+                        <div class="col-md-6">
+                            <div style="background: white; padding: 2rem; border-radius: 1.2rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; align-items: flex-start; gap: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(46, 204, 113, 0.15)'; this.style.borderColor='rgba(46, 204, 113, 0.3)';">
+                                <div style="width: 55px; height: 55px; background: rgba(46, 204, 113, 0.1); border-radius: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-globe" style="color: #2ecc71; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color: #2c3e50; font-weight: 800; font-size: 1.15rem; margin-bottom: 0.4rem;">Uluslararası Standartlar</h5>
+                                    <p style="color: #666; margin: 0; font-size: 0.95rem; line-height: 1.5;">Hizmetlerimiz uluslararası danışmanlık ve eğitim standartlarına uygun olarak verilmektedir.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div style="background: white; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 160, 160, 0.1); border-top: 4px solid #3498db;">
-                                <h5 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1rem;">
-                                    <i class="fas fa-award" style="color: #3498db; margin-right: 0.5rem;"></i> Kanıtlanmış Başarı
-                                </h5>
-                                <p style="color: var(--text-light); margin: 0;">Uzmanlarımız sayısız başarılı öğrenci ve ailelerin yaşam kalitesini geliştirmiştir.</p>
+                        <div class="col-md-6">
+                            <div style="background: white; padding: 2rem; border-radius: 1.2rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; align-items: flex-start; gap: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 35px rgba(243, 156, 18, 0.15)'; this.style.borderColor='rgba(243, 156, 18, 0.3)';">
+                                <div style="width: 55px; height: 55px; background: rgba(243, 156, 18, 0.1); border-radius: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-award" style="color: #f39c12; font-size: 1.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color: #2c3e50; font-weight: 800; font-size: 1.15rem; margin-bottom: 0.4rem;">Kanıtlanmış Başarı</h5>
+                                    <p style="color: #666; margin: 0; font-size: 0.95rem; line-height: 1.5;">Uzmanlarımız sayısız başarılı öğrenci ve ailelerin yaşam kalitesini geliştirmiştir.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
